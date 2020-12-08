@@ -1,0 +1,50 @@
+/* Styling Across All Pages for nav */
+body{
+    background-color: #DFC4BA;
+}
+
+/* Logo Text*/
+h1{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin: auto 0;
+    padding-left: 15px;
+}
+
+/* nav tabs text styling*/
+h2{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+/*brain logo*/
+.brain_logo_new{
+   width: 25%;
+   padding-left: 10px;
+   padding-top: 15px; 
+}
+
+/*entire logo region*/
+.logoArea{
+    align-items: center;
+}
+
+/*all nav tabs alignment*/
+.navigationTabs {
+    justify-content: space-around;
+    padding-top: 2em;
+}
+
+.navigationTabs a{
+    color: #251F1F;
+    text-decoration: none;
+}
+
+.backHome a{
+    text-decoration: none !important;
+    color: #555353;;
+}

@@ -1,0 +1,128 @@
+/* Styling for each row in the accordion */
+.card-link {
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-family: TeX Gyre Adventor;
+  font-style: normal;
+  font-size: 20px;
+  color: #555353;
+}
+
+/* animation for hovering over the text in each row in the accordion */
+.active, .cardLink:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* styling of the background color and more for each title in the rows */
+.titleHeader{
+    padding:.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f5eeee;
+}
+
+/* animation for the background color for each title in the rows */
+.active, .titleHeader:hover {
+    background-color: #E9D8D2;
+}
+
+/* styling of buttons in each title row */
+.buttons{
+    background-color: #9F9191;
+    border: none;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    outline: none !important;
+    box-shadow: none;
+}
+
+/* styling of the body of each row */
+.card-body{
+    color: #251F1F;
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 16px;
+
+}
+
+/* Setting the margin and padding main area under the nav bar for the first information section */
+.mainPageArea2{
+    padding-top: 5%;
+    padding-left: 3%;
+} 
+
+/* Setting the margin and padding main area under the nav bar for the second information section */
+.mainPageArea3{
+    padding-left: 3%;
+    /* justify or text align */
+}
+
+/* styling of Action Potential Steps Title */
+.titleAP{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    padding:10px;
+    color: #555353;
+}
+
+/* styling of Action Potential Graph Title */
+.graphAP{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    padding:10px;
+    color: #555353;
+    /* align: center; */
+}
+
+/* sizing action potential graph */
+/* #actionPotentialGraph{
+    width:80%;
+    height:80%;
+} */
+
+
+/* Styling of the text for title */
+.title{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    padding:5px;
+    color:black; 
+}
+    
+/* styling of the description */
+.description{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding:10px;
+    color:#555353;
+    padding-bottom: 3%; 
+}
+
+.graph{
+    min-width:400px;
+    max-width: 80%;
+}
+
+.explain_table{
+    min-width:400px;
+}

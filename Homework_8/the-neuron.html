@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <!-- stylesheet for bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--jquery link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <!--GSAP link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+        <!-- Scroll Trigger link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+        <!-- Stylesheet for nav bar -->
+        <link rel="stylesheet" href="./mystyle.css">
+        <!-- Stylesheet for neuron page -->
+        <link rel="stylesheet" href="./neuron.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- creation of container and class for nav bar -->
+        <div class="container-fluid topNavigation">
+            <!-- create row -->
+            <div class="row">
+                <!-- create col for the logo svg and the logo text to span 2 columns -->
+                <div class="col-2 backHome">
+                    <a href="home.html">
+                        <div class="row logoArea">
+                            <img class="brain_logo_new" src="brain_logo_new.png" atl="logo">
+                                <h1 class="logoText">Branium</h1> 
+                        </div>
+                    </a>
+                </div>
+                <!-- create column for the navigation headings to span 8 columns -->
+                <div class="col-8">
+                    <div class="row navigationTabs">
+                        <a href=''>
+                            <h2 class="navText">THE NEURON</h2>
+                        </a>
+                        <a href='./actionPotential.html'>
+                            <!-- link the action potential page -->
+                            <h2 class="navText">ACTION POTENTIAL</h2>
+                        </a>
+                        <a href='./theBrain.html'>
+                            <!-- link the brain page -->
+                            <h2 class="navText">THE BRAIN</h2>
+                        </a>
+                    </div>
+                </div>
+                <!-- create column to consume empty space for 2 columns -->
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+        <!-- Main Page Area -->
+        <div class=" container-fluid mainPageArea">
+            <!-- Create Row -->
+            <div class="row entireNeuron">
+                <!-- Create column to span 8 for svg -->
+                <div class="col-8 entireNeuron">
+                    <div id="neuron" class="GSAPSVG" >
+                        <!-- SVG here -->
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 753.88 358.87"><defs><style>.cls-1{fill:#afa3cf;}.cls-1,.cls-2{stroke:#000;}.cls-1,.cls-2,.cls-3{stroke-width:1.97px;}.cls-2{fill:#f4df9d;}.cls-3{fill:#e2a578;stroke:#660651;}</style></defs><g id="Terminal"><path class="cls-1" d="M670.77,212c.1-.2.19-.41.29-.62,7.54-16.66,13.58-33.94,16.61-41.51s4.22-25.65,3.07-27.57S686.13,127.35,677.3,130s-5.76,0-8.45,4.21-9.21,4.59-9.6.76,1.16-5,7.68-6.13,3.07-5.74-1.53-9.95-16.9-4.22-8.07-10,9.22-6.51,12.67-3.83-7.29,4.6,2.31,10.34,16.51,9.19,19.58,9.58,5.76.76,5.76-2.69,3.84-6.89,6.14-8.8,3.46-9.58,3.46-9.58-8.07-7.27-1.15-6.51,10.36,1.15,6.91,5.36c.77,1.15-.39,4.6.38,5.75s12.29-.38,12.29-.38,10.36-.77,6.91,5.74c-.77,1.91-3.46,4.6-8.06,1.53-4.23.77-8.45-.76-9.6-.38s-16.51,7.28-15,41.75c10.37-5.75,40.71-23.75,44.54-25.28s22.27-22.6,22.66-24.51-3.84-7.66-3.07-9.2,8.06-4.59,9.59-5,3.46-4.6,5.38.38,1.54,5,0,6.13-2.69,1.91-2.31,4.21.77,3.83,1.92,3.45,1.92,1.91,1.92,1.91l-15.35,12.25s14.2-2.68,16.12-4.59,5.76-3.83,6.53-1.15,1.54,1.92,0,3.83-4.22,3.83-9.22,5.36-8.44,3.07-11.51,3.45a64.08,64.08,0,0,0-8.83,2.3s-3.08.76-9.22,5.74a102.4,102.4,0,0,1-14.21,9.58c-3.84,2.3-6.52,3.06-10.36,5.74a89,89,0,0,1-10.37,5.75s-5.76,1.91-7.3,3.83-4.22,5-5,6.12a44.68,44.68,0,0,0-2.3,5l-1.54,6.9-5,5.74-1.15,5.36s9.6,1.15,11.52,1.15a8.75,8.75,0,0,0,6.14-1.91c2.69-1.92,2.31-.77,4.61-3.45s5-5.36,6.14-7.66,3.84-5,6.15-6.89,5.37-4.6,6.91-5,6.91-1.92,8.06-3.07,2.31,0,3.07-1.91,3.08-5.74,3.46-7.66.38-2.68,1.92-2.68,2.69-.76,3.45,1.15,2.31,1.53,1.54,4.21a26.63,26.63,0,0,1-1.54,4.21l.39.77s3.45,1.15,4.61-.77a10.09,10.09,0,0,1,3.07-3.06l2.3-3.06,1.92-3.45,1.92-1.53,3.46-.77s1.15,0,1.92,2.68,1.15,3.83,1.15,5-4.61,4.6-4.61,4.6l-1.54,1.53a20.67,20.67,0,0,0-4.61,1.53,30.1,30.1,0,0,1-5,1.92l-5.38.38-3.84,1.92-1.54,1.15v2.29a8.69,8.69,0,0,0,2.69,2.3c1.15.38,8.07,0,8.07,0l1.53-.38-2.3,3.06-7.68,1.53-3.84.77c-1.92.38-6.91,1.15-6.91,1.15a45.43,45.43,0,0,0-5.76,3.06c-1.54,1.15-4.61.39-1.92,2.3s.77,3.07,9.21,2.3,3.08-1.53,10.75.76,9.22,1.54,13.83,3.83-3.08.77,10,5,12.67,3.83,21.5,6.9,7.68-1.15,10.37,4.59,15.35,6.51,2.69,5.75-10.37-.77-16.9-3.07-5.76-2.68-15.36-6.13-15.36-8.42-5,3.45,12.67,13,14.21,23.36,2.3,32.56,11.52,33.32,17.28,3.07,11.9,7.66-14.21,1.54-16.9-2.68-8.44-8-9.59-13.79.77-10.34-1.15-11.1-1.93-.77-3.85.76-.76-1.91-3.45,4.22-3.46,7.27-5,8-9.6,1.92-9.6-1.92,1.15-5,3.07-5.36-1.54,3.07,4.61-2.3,8.83-9.57,9.6-11.87,5-12.64-13.06-25.66-31.48-21.06-48-13.4c4.61,6.89,13,12.25,12.67,26,0,1.53,6.52,6.9-.77,9.19-1.15.39-8.06.77-4.22-9.19,0-5,1.15-8-8.83-16.85.38,8.42-.39,16.85.38,19.91s7.3,10.35-1.54,13.41c-5-1.15-8.83-4.21-3.07-13.79,0-8.81-9.21-46.72-32.63-11.49A28.32,28.32,0,0,1,670.77,212Z" transform="translate(-62.4 -81.22)"/></g><g id="Myelin"><path class="cls-2" d="M293.73,306.4c5.18-10.34,3.74-13.79,2.59-16.95s40.6-4.59,69.11,11.49c0,0,27.07,9.19,2.88,26.43C368.31,327.37,323.39,334,293.73,306.4Z" transform="translate(-62.4 -81.22)"/><path class="cls-2" d="M387.89,335.12s-8.35-4-5.76-11.49,4.9-7.47,7.2-8.33,15.55-.57,16.7-.57,45.5,4.59,51.55,9.76,8.06,11.49,8.06,14.08-.57,10.91-8.64,10.91-42.33-.57-43.77-2S393.65,341.15,387.89,335.12Z" transform="translate(-62.4 -81.22)"/><path class="cls-2" d="M493.86,356.38c-15.26-4.89-21.88-10.63-21.31-16.66s1.73-8.33,4.32-9.77,8.93-3.16,10.66-3.73,51.55-7.76,56.44-6.61,10.94,6.9,11.52,10.34,6,11.49-6.34,16.66-21.59,8.62-29.94,9.19S493.86,356.38,493.86,356.38Z" transform="translate(-62.4 -81.22)"/><path class="cls-2" d="M580.83,334.26c-13.84.86-18.14,2.59-17.85-7.75s-.87-14.08,7.48-18.1,32-19.53,35.71-21.26,15.84-5.45,21.31,1.73,4.9,10.34-.86,16.66S590,333.69,580.83,334.26Z" transform="translate(-62.4 -81.22)"/><path class="cls-2" d="M631.22,282.27c-5.62-10.41-7.77-16.09-2.59-23.55s30.24-43.09,31.1-44.24,10.66-5.46,19.3,2,10.36,12.64,2.3,23.56-26.78,40.21-33.4,43.66S635.26,289.74,631.22,282.27Z" transform="translate(-62.4 -81.22)"/></g><g id="Nuclei"><path class="cls-3" d="M322.52,305.82c4.3,0,7.78-2.18,7.78-4.88s-3.48-4.88-7.78-4.88-7.77,2.18-7.77,4.88S318.23,305.82,322.52,305.82Z" transform="translate(-62.4 -81.22)"/><path class="cls-3" d="M419,337.71c4.3,0,7.78-2.19,7.78-4.89s-3.48-4.88-7.78-4.88-7.77,2.19-7.77,4.88S414.7,337.71,419,337.71Z" transform="translate(-62.4 -81.22)"/><path class="cls-3" d="M516.33,344.6c4.29,0,7.77-2.19,7.77-4.88s-3.48-4.89-7.77-4.89-7.78,2.19-7.78,4.89S512,344.6,516.33,344.6Z" transform="translate(-62.4 -81.22)"/><path class="cls-3" d="M597.56,312.85c3.91-1.75,6.19-5.17,5.08-7.63s-5.18-3-9.1-1.27-6.19,5.17-5.08,7.63S593.64,314.61,597.56,312.85Z" transform="translate(-62.4 -81.22)"/><path class="cls-3" d="M657.49,249.61c2.33-3.6,2.37-7.7.1-9.17s-6,.27-8.33,3.87-2.37,7.7-.1,9.17S655.16,253.21,657.49,249.61Z" transform="translate(-62.4 -81.22)"/></g><g id="Nodes"><path class="cls-1" d="M621.15,284.28l6.33-8.9,6.62,10.05-4.6,4.31S625.47,284.86,621.15,284.28Z" transform="translate(-62.4 -81.22)"/><path class="cls-1" d="M378.39,315a44.49,44.49,0,0,0,8.64,1.14l-4.9,7.47-9.5-.28Z" transform="translate(-62.4 -81.22)"/><path class="cls-1" d="M464.78,333.69l9.5-.58-2,9.48h-7.2S465.64,334.83,464.78,333.69Z" transform="translate(-62.4 -81.22)"/><path class="cls-1" d="M553.47,325.36s7.78-5.75,8.35-7.19.87,11.49,1.16,12.36-5.19,2-5.19,2Z" transform="translate(-62.4 -81.22)"/></g><g id="Dendrite"><path class="cls-1" d="M292.19,303.53c8.31-3.43,2.3-14.56,2.3-14.56s-60.66-11.49-48.37-55.15l12.28-43.66S273,179.44,285.28,171s8.45-11.48-1.54-8.42c-1.53-3.07,5.38-10.72,6.15-12.25s13.82-29.88-12.29,8.42c0,2.3-22.27,27.57-9.21-17.62,0,0,16.89-81.19-2.31-22.21,0,0-4.61,14.55-9.21,4.59,0,0,9.21,30.64-19.2,105.71A93.86,93.86,0,0,1,226.15,217c-2.3-3.83-3.84-13,6.91-32.93S250,151.87,250,151.87s10-19.16-2.31-5.37c0,0,.77-43.66-6.91,10,0,0-6.14,9.19-10,13,0,0,10.75-25.27-2.3-19.14,0,0-6.92-16.09-6.15,2.29s4.61,22.22,2.31,32.94-6.15,6.12-6.92-3.07-23,.77,12.29,56.68c0,0,12.28,58.22-33,16.86,0,0-56.83-45.2,16.13-98.81-9.22,6.89-13.06,14.55-11.52,5.36s0-8.43,0-8.43-8.45,16.09-13.82,19.92-26.88,10.72,20.73-42.9c-9.22,6.9-26.11,19.92-9.22-17.61C183.15,138.84,173.16,168,164,142.67c0,0,10,106.47-13.82,37.54,0,0-8.45-13.79,11.52-82-6.91,15.32-13.06,36.76-11.52-7.66,0,0-6.91,2.3-5.38,51.32,0,0-21.5,49-16.89-16.09,0,0,6.91-29.1,7.68-34.47s-3.84,1.54-5.38,4.6-1.53-11.49-1.53-11.49a37.52,37.52,0,0,0-5.38,16.08c-.76,9.2-7.68-6.89-10-10.72s15.36,25.28,3.07,49.79c0,0-17.66-29.11-19.2-20.68s36.86,54.38,37.63,57.44,23,25.28-4.61,21.45C121,197.05,115.57,191.69,111,184s-14.59-23-14.59-23L74.11,135.78l-1.54-35.24L69.5,109l-5.38-5.36,4.61,10.72.77,14.56-5.38,2.29s64.51,65.11,12.29,40.6c0,0-19.2,5.36,23.8,16.09,0,0,3.07,17.61,39.93,19.91,0,0,27.65,29.87,34.56,58.21,0,0,7.68,61.28-27.65,13.79,0,0,6.92,16.85,2.31,16.85s-26.88-13-30-13-12.29,4.6-12.29,4.6,62.2,15.31,3.84,16.08c0,0-41.46,14.55-25.34-82.72,0,0-5.37,28.34-10,1.53,0,0-12.29,60.51,0,84.26,0,0,11.52,14.55-5.37,15.31a343.31,343.31,0,0,0,41.46-9.19s-15.36,30.64-23,30.64c0,0,6.91,1.53-.77,6.13,0,0,3.07,6.13,11.52-4.6s20.73-36.76,50.68-36c10,3.07,46.84,33.71-9.22,44.43C124,361,60.28,384,65.66,387.78s37.63-19.15,32.25-7.66-23,44.43-23,44.43,21.5-49,16.9-11.49c2.3,3.06,58.36-104.17,18.43,0,.76,2.3,10-13.79,11.52,7.66,0,0,.76-81.19,58.36-56.68,1.53,20.68-10.76,49-43,68.17,33-19.15,38.4-27.58,23,4.59,7.68-7.66,11.52-6.89,13.82,3.07,3.07-34.47,9.22-45.19,15.36-50.55,6.14,16.08,8.45,23,9.22,26.8s-3.84-54.38-4.61-57.45,29.95-1.53,29.95-1.53,23,44.43,13.05,64.35c5.38-16.86-3.84-50.56,36.86,8.42,0,0-27.64-30.64,16.9-19.15-15.36-12.25-43.78-29.1-51.45-42.13S230,338,253.8,354.85s38.39,23.74,40.7,22.21-45.31-23,7.67-13.79C268.39,348.72,212.33,336.46,292.19,303.53Z" transform="translate(-62.4 -81.22)"/></g><g id="Soma"><path class="cls-3" d="M196.11,313.87c-.29-10.34,3.16-13.5,9.5-12.64s12.67,3.73,15.26,6.6,6.34,8.05,6.91,10.06a42.68,42.68,0,0,1,1.15,6c.29,2,1.16,4,.29,5.74s-2,5.46-4.32,5.75-3.74.86-6.33-.58a69.58,69.58,0,0,1-8.35-5.45A114.89,114.89,0,0,1,200.14,319C198.7,317,196.11,313.87,196.11,313.87Z" transform="translate(-62.4 -81.22)"/></g></svg>
+                    </div>
+                </div>
+                <!-- create column to span 4 for information about each svg -->
+                <div class="col-4 information">
+                    <!-- Initial Title that will change according to clicking on components -->
+                    <div id="title">
+                        Welcome to the Interactive Neuron!
+                    </div>
+                    <!-- line division between title and description -->
+                    <div id="line"></div>
+                    <!-- Initial Description that will change according to clicking on components -->
+                    <div id="description">
+                            Neurons are cells within the nervous system that transmit and receive information from other neurons, muscle cells and glands. Neurons transmit information through the generation of electrical signals called <b>action potentials</b>, which we will go over on the next page.
+                        <br> 
+                        <br> There are four main categories of neurons: unipolar, bipolar, pseudounipolar, and multipolar. The neuron we are currently looking at is a <b>multipolar neuron</b>. 
+                        <br>
+                        <br> Like the other three types of neurons, a multipolar neuron consists of one axon. However, unlike the others it contains many <b>dendritic branches</b> that allow it to integrate information from several other cells.
+                        <br>
+                        <br> Let's walk through each of these structures by <b>clicking</b> on them to better understand their respective functions.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            jQuery(function() {
+
+                //animation to delay the page main area by 1 second
+                //start with 0 opacity
+                gsap.set($(".mainPageArea"), {css: {opacity:0}})
+                //end with 1 opacity
+                gsap.to($(".mainPageArea"), {css: {opacity:1},
+                                                    duration: 1,
+                                                    delay: 0.5});
+
+                //animation for mouseover for nav bar headings
+                //mouseenter increases the size and changes the color of the text                                   
+                $(".navText").on("mouseenter", function() {
+                    gsap.to($(this), {css: {color: "white"},
+                                            duration: 0.25});
+                });
+
+                //mouseleave returns the text to its original size and color
+                $(".navText").on("mouseleave",function() {
+                    gsap.to($(this), {css: {color:"black"},
+                                            duration: 0.25});
+                });
+
+                //On click the terminal should turn white and the terminal information pops up
+                $("#Terminal .cls-1").on("click",function() {
+                    gsap.to($(this), {css: {fill:"#F5F5F5"},
+                                                duration:0.25});
+                    $("#title").html("Terminal")
+                    $("#description").html("After the <b>actional potential</b> has propagated down the axon it reaches the <b>terminal</b>. The terminal is responsible for transmitting this signal to other neurons or cells through the neuron-to-neuron connection called the <b>synapse</b>. <br><br>When the action potential reaches the terminal it gets converted to a chemical signal through the release of <b>neurotransmitters</b>. <br><br> These neurotransmitters are released into the synapse where there are picked up by the <b>dendrites</b> of another neuron.");
+                });
+
+                //on Mouseleave the terminal should go back to its original color
+                $("#Terminal .cls-1").on("mouseleave",function() {
+                    gsap.to($(this), {css: {fill:"#AFA3CF"},
+                                            duration:0.25});
+                });
+
+                //On click the myelin should turn white and the myelin sheeth information pops up
+                $("#Myelin .cls-2").on("click",function() {
+                    gsap.to($(this), {css: {fill:"#F5F5F5"},
+                                                duration:0.25});
+                    $("#title").html("Myelin Sheath")
+                    $("#description").html("The <b>myelin sheath</b> is a fatty insulating layer that is wrapped around the <b>axon</b> that transports the <b>action potential</b> from the <b>dendrite</b> to the <b>terminal</b>. The myelin sheath is produced by <b>Schwann cells</b> in a process called <b>myelination</b>. <br> <br> The main function of the myelin sheath is to help the neuron conduct the electrical signal (action potential) at a faster rate down the axon. The myelin sheath allows the electrical signal (action potential) to jump from one node to the next node in a process called <b>saltatory conduction</b>, causing the signal to travel faster. <br><br> Therefore, if the myelin sheath is damaged it can cause these signals to slow down. The loss of the myelin sheath causes the neurogenerative disease, <b>multiple sclerosis</b>, which can lead to motor impairment.");
+                });
+
+                //on Mouseleave the myelin sheeth should go back to its original color
+                $("#Myelin .cls-2").on("mouseleave",function() {
+                    gsap.to($(this), {css: {fill:"#F4DF9D"},
+                                            duration:0.25});
+                });
+
+                // On click the nuclei should turn white and the nuclei information pops up
+                $("#Nuclei .cls-3").on("click",function() {
+                    gsap.to($(this), {css: {fill:"#F5F5F5"},
+                                                duration:0.25});
+                    $("#title").html("Nucleus")
+                    $("#description").html("The <b>nucleus</b>, (plural is nuclei), is in all types of cells within the human body besides red blood cells. The nucleus is responsible for housing all of the genetic and hereditary information and controlling the the <b>growth and metabolism</b> of a cell.");
+                });
+
+                //on Mouseleave the nuclei should go back to its original color
+                $("#Nuclei .cls-3").on("mouseleave",function() {
+                    gsap.to($(this), {css: {fill:"#E2A578"},
+                                            duration:0.25});
+                });
+                
+                // On click the nodes should turn white and the nodes information pops up
+                $("#Nodes .cls-1").on("click",function() {
+                    gsap.to($(this), {css: {fill:"#F5F5F5"},
+                                                duration:0.25});
+                    $("#title").html("Node of Ranvier")
+                    $("#description").html("The <b>Node of Ranvier</b> are gaps between the <b>myelin sheath</b> that expose the axon to the external environment. These sections are filled with ion channels allow the flow of ions between the interior of the axon and the external environment. <br> <br>They are very rich in <b>sodium and potassium ion channels</b> which are used to produce action potentials. The action potential produced at the first node is <b>propagated</b> to the next node where it is <b>regenerated</b>, and passed on to the next until it reaches the <b>terminal</b>.");
+                });
+
+                //on Mouseleave the nodes should go back to its original color
+                $("#Nodes .cls-1").on("mouseleave",function() {
+                    gsap.to($(this), {css: {fill:"#AFA3CF"},
+                                            duration:0.25});
+                });
+
+                // On click the soma should turn white and the soma information pops up
+                $("#Soma .cls-3").on("click",function() {
+                    gsap.to($(this), {css: {fill:"#F5F5F5"},
+                                                duration:0.25});
+                    $("#title").html("Soma")
+                    $("#description").html("The <b>soma</b> is the battery that keeps the neuron going. It does not play an active role in transmitting the action potential. <br><br>It produces <b>proteins</b> to create the various structures of the neuron such as the dendrite, axon, and more!");
+                });
+
+                //on Mouseleave the soma should go back to its original color
+                $("#Soma .cls-3").on("mouseleave",function() {
+                    gsap.to($(this), {css: {fill:"#E2A578"},
+                                            duration:0.25});
+                });
+
+                // On click the dendrite should turn white and the dendrite information pops up
+                $("#Dendrite .cls-1").on("click",function() {
+                    gsap.to($(this), {css: {fill:"#F5F5F5"},
+                                                duration:0.25});
+                    $("#title").html("Dendrite")
+                    $("#description").html("The <b>dendrite</b> is the section of the neuron that is responsible for receiving signals from other cells, glands, and neurons. <br> <br> The branches protruding from this structure are called <b>dendritic branches</b> and they are responsible for capturing the thousands of signals that a neuron can receive from many other cells. <br> <br> The signals can be <b>excitatory</b> or <b>inhibitory</b> in nature. The sum of all of these signals will either cause or prevent a response. An excitatory signal will cause the neuron to fire an electrical signal called an <b>action potential</b> that travels down the <b>axon</b>. An inhibitory signal will prevent the neuron from firing an actional potential.");
+                });
+
+                //on Mouseleave the dendrite should go back to its original color
+                $("#Dendrite .cls-1").on("mouseleave",function() {
+                    gsap.to($(this), {css: {fill:"#AFA3CF"},
+                                            duration:0.25});
+                });
+
+            })
+        </script>
+    </body>
+</html>

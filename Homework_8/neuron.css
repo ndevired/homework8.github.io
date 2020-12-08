@@ -1,0 +1,44 @@
+/* Setting the margin and padding main area under the nav bar */
+.mainPageArea{
+    margin: auto;
+    padding: 5%;
+}
+
+/* creation on information box: to add the itle and the description */
+.information{
+min-width: 350px;
+min-height: 500px;
+/* background-color: #F5F5F5; */
+margin-top: 10px;
+}
+
+/* Styling of the text for title */
+#title{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    padding:10px;
+    color: #555353; 
+}
+
+/* creation and styling of the line to divide the description from the title  */
+#line{
+    height: 2px;
+    width: 99%;
+    background-color: #555353; 
+}
+
+/* styling of the description */
+#description{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding:10px;
+    color:#353333; 
+}
+
+.entireNeuron{
+    min-width:400px;
+}

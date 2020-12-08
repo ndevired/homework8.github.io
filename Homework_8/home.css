@@ -1,0 +1,33 @@
+body{
+    background-color:  #DFC4BA;
+}
+.welcome{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    color:#555353;
+    align-content: center;
+    text-align: center;
+}
+
+.homeLogo{
+    padding-top: 5%;
+    min-width: 200px;
+}
+
+.landingDescription{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color:#555353;
+    align-content: center;
+    text-align: center;
+}
+
+
+.landingDescription a{
+    text-decoration: none !important;
+    color: #555353;
+}

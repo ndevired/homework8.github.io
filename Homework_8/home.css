@@ -1,3 +1,9 @@
+/* adding font every where */
+@font-face{
+    font-family: Tex Gyre Adventor;
+    src: url("texgyreadventor-regular.otf");
+}
+
 /* set the background color to pink shade */
 body{
     background-color:  #DFC4BA;

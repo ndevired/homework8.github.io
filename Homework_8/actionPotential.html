@@ -60,11 +60,19 @@
     <!-- Creation of main page container -->
     <div class="container-fluid">
             <div class="row mainPageArea2">
-                <div class="title col-12">
+                <div class="title col-6">
                     What is an Action Potential?
                 </div>
                 <div class="description">
-                    An action potential is text.........
+                    An action potential is an <b>electrical signal</b> that is transmitted from the dendrite to the terminal. An action potential is created by the exchange of ions across the membrane of a neuron. To understand more about a <b>neuron</b>, please visit the neuron page as seen above. 
+                    <br><br>
+                    The exchange of ions occurs due to the presence of a <b>concentration gradient</b>. A concentration gradient occurs because of the difference in the ion concentrations inside the neuron and outside the neuron. Ions always move from a higher concentration to a lower concentration, down the concentration gradient.
+                    <br><br>
+                    The cell membrane of a neuron is <b>highly permeable</b> to potassium ions, causing potassium to constantly leak out of the neuron through <b>potassium leak channels</b>. The membrane is <b>partially permeable</b> to sodium ions, causing sodium to leak into the neuron through <b>sodium leak channels</b>. Potassium and sodium ions are positively charged. Due to large amount of potassium ions leaving the neuron, the <b> extracellular fluid is generally more positively charged than the interior of the neuron. Therefore, the membrane potential of the neuron is negative.</b>
+                    <br><br>
+                    In order to maintain the state of the negative concentration gradient, the cell uses a <b>sodium potassium pump</b> that pumps two potassium ions back into the neuron and three sodium out of the neuron at the same time.
+                    <br><br>
+                    <b class="definition">An action potential is a temporary change in the negative state of the membrane potential to a positive state because of the flow of these ions.</b> Let's take a look at the step by step process below to see what happens in relation to the graph by clicking on the numbers! 
                 </div>
             </div>
         <div class="mainPageArea3">
@@ -72,7 +80,7 @@
             <div class="row">
                 <!-- Creation of column 1 -->
                 <div class="col-6 explain_table">
-                    <div class=" titleAP col-6">
+                    <div class=" titleAP col-12">
                         ACTION POTENTIAL STEPS
                     </div>
                     <!-- Accordion -->
@@ -90,7 +98,10 @@
                                     </div>
                                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                     <div class="card-body"> 
-                                        Some Text
+                                        We start at the resting state, with a membrane potential of -70mV and the voltage gated sodium and potassium channels are completely closed. 
+                                        These voltaged gated ion channel will only open in response to an action potential. In order for an action potential to occur the membrane potential must reach the threshold potential(-55mV).
+                                        <br><br>
+                                        This is where the <b>stimlus</b> comes in. A stimulus must be strong enough to cause a rush of positive ions into the neuron, causing the membrane potential to also rise closer to -55mV. Once the threshold potential has been reached, <b>depolarization</b> will occur. If a stimulus is weak it will not produce an action potential and will result in <b>failed initiations</b>, as seen in the graph.  
                                     </div>
                                     </div>
                                 </div>  
@@ -110,7 +121,7 @@
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        Some Text
+                                        When threshold has been reached the voltage gated sodium channels become activated causing them to open. When one sodium channel opens, all others follow very quickly. Sodium ions flood into the neuron, causing the membrane potential to rise significantly to reach a <b>positive membrane potential</b> of +40mV. This entire process is known as <b>depolarization</b>.
                                     </div>
                                     </div>
                                 </div>
@@ -130,7 +141,7 @@
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        Some Text
+                                        When the membrane potential reaches +40mV, the cell has to bring the potential back to its resting state. At this point, the <b>voltage gated sodium channels close</b>, stopping the flow of positive ions into the cell. The <b>voltage gated potassium channels open</b> causing potassium to flow out of the neuron; this is due to the presence of a concentration gradient. There is a higher concentration of potassium inside the cell, so it must flow out of neuron into the extracellular fluid. This causes the membrane potential to decrease, this is called <b>repolarization</b>.  
                                     </div>
                                     </div>
                                 </div>
@@ -150,7 +161,7 @@
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        Some Text
+                                        Unlike voltage gated sodium channels, <b>voltage gated potassium channels cannot close immediately</b>, they take time to close. This delay in closing causes the voltage gated potassium channels to stay open longer. This results in the membrane potential dipping below the resting membrane potential (-70mV), called <b>hyperpolarization</b>. The sodium-potassium pump works to bring the cell back to its resting state.
                                     </div>
                                     </div>
                                 </div>
@@ -170,7 +181,7 @@
                                     </div>
                                     <div id="collapseFive" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        Some Text
+                                        Finally, the membrane potential is brought back to the restating state which is <b>-70mV</b> and the cell is prepared to receive another stimuli to produce another action potential. 
                                     </div>
                                     </div>
                                 </div>
@@ -250,6 +261,38 @@
         $("#restingStateButton").on("click",function(){
             gsap.to($("#Button5"), {css:{opacity:1}})
         })
+
+        //mouseenter for title and changes the color of the text                                   
+        $(".title").on("mouseenter", function() {
+            gsap.to($(this), {css: {color: "white"},
+                                    duration: 0.25});
+        });
+
+        //mouseenter for titleAP and changes the color of the text                                   
+        $(".titleAP").on("mouseenter", function() {
+            gsap.to($(this), {css: {color: "white"},
+                                    duration: 0.25});
+        });
+
+
+        //mouseenter for graphAP and changes the color of the text                                   
+        $(".graphAP").on("mouseenter", function() {
+            gsap.to($(this), {css: {color: "white"},
+                                    duration: 0.25});
+        });
+
+        //mouseenter for definition and changes the color of the text                                   
+        $(".definition").on("mouseenter", function() {
+            gsap.to($(this), {css: {color: "white"},
+                                    duration: 0.25});
+        });
+
+        //mouseenter for definition and changes the color of the text                                   
+        $(".definition").on("mouseleave", function() {
+            gsap.to($(this), {css: {color: "#555353"},
+                                    duration: 0.25});
+        });
+
         
     })
     </script>

@@ -1,3 +1,12 @@
+@font-face{
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: TeX Gyre Adventor;
+    src: url(texgyreadventor-regular.otf);
+}
 /* creation on information box: to add the itle and the description */
 .information{
     min-width: 350px;
@@ -8,7 +17,7 @@
     
 /* Styling of the text for title */
 #title{
-    font-family: TeX Gyre Adventor;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;

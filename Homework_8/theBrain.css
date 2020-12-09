@@ -1,12 +1,3 @@
-@font-face{
-    font-family: Poppins;
-    src: url("Poppins-Regular.ttf");
-}
-
-@font-face{
-    font-family: TeX Gyre Adventor;
-    src: url("texgyreadventor-regular.otf");
-}
 /* creation on information box: to add the itle and the description */
 .information{
     min-width: 350px;
@@ -14,10 +5,15 @@
     /* background-color: #F5F5F5; */
     margin-top: 10px;
 }
+
+@font-face{
+    font-family: Tex Gyre Adventor;
+    src: url("texgyreadventor-regular.otf");
+}
     
 /* Styling of the text for title */
 #title{
-    font-family: Poppins;
+    font-family: TeX Gyre Adventor;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -77,17 +73,14 @@
     color:#353333; 
 }
 
-/* setting the min width for diagram 1 */
 .sideSection{
     min-width: 400px;
 }
 
-/* setting the min width for diagram 2 */
 .crossSection{
     min-width: 400px;
 }
 
-/* setting the main page area to 5% */
 .mainPageArea4{
     padding-top: 5%;
 }

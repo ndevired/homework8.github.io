@@ -39,11 +39,13 @@ h2{
     padding-top: 2em;
 }
 
+/* setting the active for the nav heading to black so there are no blue hyperlinks */
 .navigationTabs a{
     color: #251F1F;
     text-decoration: none;
 }
 
+/* removing the blue hyperlinks for logo area  */
 .backHome a{
     text-decoration: none !important;
     color: #555353;;

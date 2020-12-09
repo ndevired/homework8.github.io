@@ -1,300 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <!-- stylesheet for bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!--jquery link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <!--GSAP link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-    <!-- Scroll Trigger link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
-    <!-- Link for Bootstrap accordion -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Stylesheet for nav bar -->
-    <link rel="stylesheet" href="./mystyle.css">
-    <!-- Stylesheet for actoion potential page -->
-    <link rel="stylesheet" href="./actionPotential.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <!-- stylesheet for bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--jquery link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <!--GSAP link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+        <!-- Scroll Trigger link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+        <!-- Link for Bootstrap accordion -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Stylesheet for nav bar -->
+        <link rel="stylesheet" href="./mystyle.css">
+        <!-- Stylesheet for actoion potential page -->
+        <link rel="stylesheet" href="./actionPotential.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-<body>
-    <!-- creation of container and class for nav bar -->
-    <div class="container-fluid topNavigation">
-        <!-- create row -->
-        <div class="row">
-            <!-- create col for the logo svg and the logo text to span 2 columns -->
-            <div class="col-2 backHome">
-                <a href="home.html">
-                    <div class="row logoArea">
-                        <img class="brain_logo_new" src="brain_logo_new.png" atl="logo">
-                            <h1 class="logoText">Branium</h1> 
-                    </div>
-                </a>
-            </div>
-            <!-- create column for the navigation headings to span 8 columns -->
-            <div class="col-8">
-                <div class="row navigationTabs">
-                    <!-- link the neuron page -->
-                    <a href='./the-neuron.html'>
-                        <h2 class="navText">THE NEURON</h2>
-                    </a>
-                    <a href=''>
-                        <h2 class="navText">ACTION POTENTIAL</h2>
-                    </a>
-                    <!-- link the brain page -->
-                    <a href='./theBrain.html'>
-                        <h2 class="navText">THE BRAIN</h2>
-                    </a>
-                </div>
-            </div>
-            <!-- create column to consume empty space for 2 columns -->
-            <div class="col-2"></div>
-        </div>
-    </div>
-    <!-- Creation of main page container -->
-    <div class="container-fluid">
-            <div class="row mainPageArea2">
-                <div class="title col-6">
-                    What is an Action Potential?
-                </div>
-                <div class="description">
-                    An action potential is an <b>electrical signal</b> that is transmitted from the dendrite to the terminal. An action potential is created by the exchange of ions across the membrane of a neuron. To understand more about a <b>neuron</b>, please visit the neuron page as seen above. 
-                    <br><br>
-                    The exchange of ions occurs due to the presence of a <b>concentration gradient</b>. A concentration gradient occurs because of the difference in the ion concentrations inside the neuron and outside the neuron. Ions always move from a higher concentration to a lower concentration, down the concentration gradient.
-                    <br><br>
-                    The cell membrane of a neuron is <b>highly permeable</b> to potassium ions, causing potassium to constantly leak out of the neuron through <b>potassium leak channels</b>. The membrane is <b>partially permeable</b> to sodium ions, causing sodium to leak into the neuron through <b>sodium leak channels</b>. Potassium and sodium ions are positively charged. Due to large amount of potassium ions leaving the neuron, the <b> extracellular fluid is generally more positively charged than the interior of the neuron. Therefore, the membrane potential of the neuron is negative.</b>
-                    <br><br>
-                    In order to maintain the state of the negative concentration gradient, the cell uses a <b>sodium potassium pump</b> that pumps two potassium ions back into the neuron and three sodium out of the neuron at the same time.
-                    <br><br>
-                    <b class="definition">An action potential is a temporary change in the negative state of the membrane potential to a positive state because of the flow of these ions.</b> Let's take a look at the step by step process below to see what happens in relation to the graph by clicking on the numbers! 
-                </div>
-            </div>
-        <div class="mainPageArea3">
-        <!-- Creation of a row, that will be divided into two major columns -->
+    <body>
+        <!-- creation of container and class for nav bar -->
+        <div class="container-fluid topNavigation">
+            <!-- create row -->
             <div class="row">
-                <!-- Creation of column 1 -->
-                <div class="col-6 explain_table">
-                    <div class=" titleAP col-12">
-                        ACTION POTENTIAL STEPS
-                    </div>
-                    <!-- Accordion -->
-                    <div id="accordion">
-                        <!-- Stimulus Row -->
-                        <div class="row">
-                            <!-- The column should span the entire major column so set it to 12 -->
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="titleHeader card-header">
-                                    <a class="cardLink cardLink1 card-link" data-toggle="collapse" href="#collapseOne">
-                                        <button id="stimulusButton" class="buttons">1</button>
-                                        Stimulus
-                                    </a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                    <div class="card-body"> 
-                                        We start at the resting state, with a membrane potential of -70mV and the voltage gated sodium and potassium channels are completely closed. 
-                                        These voltaged gated ion channel will only open in response to an action potential. In order for an action potential to occur the membrane potential must reach the threshold potential(-55mV).
-                                        <br><br>
-                                        This is where the <b>stimlus</b> comes in. A stimulus must be strong enough to cause a rush of positive ions into the neuron, causing the membrane potential to also rise closer to -55mV. Once the threshold potential has been reached, <b>depolarization</b> will occur. If a stimulus is weak it will not produce an action potential and will result in <b>failed initiations</b>, as seen in the graph.  
-                                    </div>
-                                    </div>
-                                </div>  
-                            </div>
+                <!-- create col for the logo svg and the logo text to span 2 columns -->
+                <div class="col-2 backHome">
+                    <a href="home.html">
+                        <div class="row logoArea">
+                            <img class="brain_logo_new" src="brain_logo_new.png" atl="logo">
+                                <h1 class="logoText">Branium</h1> 
                         </div>
-
-                        <!-- Depolarization Row -->
-                        <div class="row">
-                            <!-- The column should span the entire major column so set it to 12 -->
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="titleHeader card-header">
-                                    <a class="cardLink cardLink2 collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                        <button id="depolarizationButton" class="buttons">2</button>
-                                        Depolarization
-                                    </a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        When threshold has been reached the voltage gated sodium channels become activated causing them to open. When one sodium channel opens, all others follow very quickly. Sodium ions flood into the neuron, causing the membrane potential to rise significantly to reach a <b>positive membrane potential</b> of +40mV. This entire process is known as <b>depolarization</b>.
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Repolarization Row -->
-                        <div class="row">
-                            <!-- The column should span the entire major column so set it to 12 -->
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="titleHeader card-header">
-                                    <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                        <button id="repolarizationButton" class="buttons">3</button>
-                                        Repolarization
-                                    </a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        When the membrane potential reaches +40mV, the cell has to bring the potential back to its resting state. At this point, the <b>voltage gated sodium channels close</b>, stopping the flow of positive ions into the cell. The <b>voltage gated potassium channels open</b> causing potassium to flow out of the neuron; this is due to the presence of a concentration gradient. There is a higher concentration of potassium inside the cell, so it must flow out of neuron into the extracellular fluid. This causes the membrane potential to decrease, this is called <b>repolarization</b>.  
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Hyperpolarization Row -->
-                        <div class="row">
-                            <!-- The column should span the entire major column so set it to 12 -->
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="titleHeader card-header">
-                                    <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                        <button id="hyperpolarizationButton" class="buttons">4</button>
-                                        Hyperpolarization
-                                    </a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Unlike voltage gated sodium channels, <b>voltage gated potassium channels cannot close immediately</b>, they take time to close. This delay in closing causes the voltage gated potassium channels to stay open longer. This results in the membrane potential dipping below the resting membrane potential (-70mV), called <b>hyperpolarization</b>. The sodium-potassium pump works to bring the cell back to its resting state.
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Resting State Row -->
-                        <div class="row">
-                            <!-- The column should span the entire major column so set it to 12 -->
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="titleHeader card-header">
-                                    <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseFive">
-                                        <button id="restingStateButton" class="buttons">5</button>
-                                        Resting State
-                                    </a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Finally, the membrane potential is brought back to the restating state which is <b>-70mV</b> and the cell is prepared to receive another stimuli to produce another action potential. 
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </a>
+                </div>
+                <!-- create column for the navigation headings to span 8 columns -->
+                <div class="col-8">
+                    <div class="row navigationTabs">
+                        <!-- link the neuron page -->
+                        <a href='./the-neuron.html'>
+                            <h2 class="navText">THE NEURON</h2>
+                        </a>
+                        <a href=''>
+                            <h2 class="navText">ACTION POTENTIAL</h2>
+                        </a>
+                        <!-- link the brain page -->
+                        <a href='./theBrain.html'>
+                            <h2 class="navText">THE BRAIN</h2>
+                        </a>
                     </div>
                 </div>
-                <!-- Creation of column 2 -->
-                <div class="col-6">
-                    <!-- The column should span the entire major column so set it to 12 -->
-                    <div class="graphAP col-6">
-                        ACTION POTENTIAL GRAPH
+                <!-- create column to consume empty space for 2 columns -->
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <!-- Creation of main page container -->
+        <div class="container-fluid">
+                <div class="row mainPageArea2">
+                    <!-- insert title -->
+                    <div class="title col-12">
+                        What is an Action Potential?
                     </div>
-                    <div class="col-6 graph">
-                        <!-- The column should span the entire major column so set it to 12 -->
-                        <div id="actionPotentialGraph" class="GSAPSVGGRAPH">
-                                    <!-- SVG here -->
-                                    <svg id="Layer-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 614.74 573.91"><defs><style>.cls-1{fill:#9f9191;}.cls-2{fill:#fbfbfb;}.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8{fill:none;}.cls-3,.cls-7,.cls-8{stroke:#9f9191;}.cls-3{stroke-width:4.64px;}.cls-4,.cls-5,.cls-6{stroke:#fff;}.cls-4{stroke-width:3.48px;stroke-dasharray:6.97 3.48;}.cls-5{stroke-width:9.29px;}.cls-6{stroke-width:2.32px;}.cls-7{stroke-width:3px;}.cls-8{stroke-width:2px;}.cls-9{fill:#555353;}</style></defs><g id="Button5"><circle class="cls-1" cx="592.24" cy="329.12" r="22.5"/><path class="cls-2" d="M610.48,357.07c0-3.48-2.38-6.05-5.62-6.05a5.15,5.15,0,0,0-2.28.51l.58-3.27h5.62v-3h-8l-1.66,9.27,2.84.77a2.88,2.88,0,0,1,2.47-1.35,3.23,3.23,0,0,1,0,6.43,2.85,2.85,0,0,1-2.88-2.68h-3.19a6.08,6.08,0,0,0,6.17,5.61A6,6,0,0,0,610.48,357.07Z" transform="translate(-12.26 -22.38)"/></g><path class="cls-3" d="M84.45,335.26H245.33" transform="translate(-12.26 -22.38)"/><path class="cls-4" d="M79.37,378.45H565" transform="translate(-12.26 -22.38)"/><path class="cls-5" d="M84.45,375.53H233.68c3.85-12.59,8-25.88,12.09-39.25,14.29-46.25,28.87-93.55,33.37-116.1,33.69-169,45.42-158.88,55.25,3.66,4.76,78.48,25.66,168.32,45.29,201.86,30.74,52.53,47.57,70.42,87.7,9.09,36.72-56.13,50.25-58.57,102.74-59.26" transform="translate(-12.26 -22.38)"/><path class="cls-6" d="M233.68,375.53c11.21-10.28,27.92-14.28,47.82,0m-47.82,0c17.56-40.54,44.76-12,62,0Z" transform="translate(-12.26 -22.38)"/><path class="cls-3" d="M84.45,22.38V502.82h488.3" transform="translate(-12.26 -22.38)"/><path class="cls-7" d="M234.54,404.39V385.26" transform="translate(-12.26 -22.38)"/><path class="cls-1" d="M234.54,378.71l2.15,5.27,2.16,5.28h-8.62l2.15-5.28Z" transform="translate(-12.26 -22.38)"/><path class="cls-8" d="M284.32,406.68V387.55" transform="translate(-12.26 -22.38)"/><path class="cls-1" d="M284.32,381l2.15,5.27,2.15,5.28H280l2.16-5.28Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M53.08,101.92H48.13v5h-1.5v-5h-5v-1.45h5V95.53h1.5v4.94h4.95Zm12.81,1.39h-2v3.8H62.15v-3.8H55.68v-2.08l6.54-7.62h1.67v8.25h2Zm-3.74-1.45V95.77l-5.24,6.09Zm15.22-1.5a9.81,9.81,0,0,1-1.14,5.34,4.53,4.53,0,0,1-7.08,0,9.86,9.86,0,0,1-1.12-5.3,9.74,9.74,0,0,1,1.14-5.31,4.48,4.48,0,0,1,7.08,0A9.84,9.84,0,0,1,77.37,100.36ZM75,104.47a5.94,5.94,0,0,0,.42-1.72,20.42,20.42,0,0,0,.12-2.39,20.85,20.85,0,0,0-.12-2.4A5.34,5.34,0,0,0,75,96.24a2.29,2.29,0,0,0-.87-1,2.5,2.5,0,0,0-1.41-.36,2.54,2.54,0,0,0-1.41.36,2.37,2.37,0,0,0-.88,1.07A5.59,5.59,0,0,0,70,98c-.07.72-.11,1.5-.11,2.36s0,1.74.1,2.37a5.87,5.87,0,0,0,.43,1.71,2.43,2.43,0,0,0,.84,1.08,2.65,2.65,0,0,0,1.46.37,2.6,2.6,0,0,0,1.42-.36A2.3,2.3,0,0,0,75,104.47Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M77.3,214.35a9.73,9.73,0,0,1-1.15,5.35,4.53,4.53,0,0,1-7.08,0,10,10,0,0,1-1.11-5.3,9.75,9.75,0,0,1,1.13-5.31,3.92,3.92,0,0,1,3.54-1.72,3.87,3.87,0,0,1,3.54,1.75A9.81,9.81,0,0,1,77.3,214.35Zm-2.39,4.12a5.93,5.93,0,0,0,.43-1.72,20.49,20.49,0,0,0,.12-2.4,20.79,20.79,0,0,0-.12-2.39,5.33,5.33,0,0,0-.44-1.72,2.29,2.29,0,0,0-.87-1.05,2.49,2.49,0,0,0-1.4-.36,2.6,2.6,0,0,0-1.42.36,2.37,2.37,0,0,0-.88,1.07A5.88,5.88,0,0,0,69.9,212c-.07.72-.1,1.5-.1,2.36a22.27,22.27,0,0,0,.1,2.37,5.57,5.57,0,0,0,.42,1.71,2.3,2.3,0,0,0,.85,1.07,2.53,2.53,0,0,0,1.46.38,2.57,2.57,0,0,0,1.41-.36A2.18,2.18,0,0,0,74.91,218.47Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M53.68,337.92H48v-1.64h5.66Zm11.88.8a4.77,4.77,0,0,1-.35,1.8,4.09,4.09,0,0,1-.94,1.45,4.64,4.64,0,0,1-1.56,1,6,6,0,0,1-2.09.34,9.4,9.4,0,0,1-2.13-.24,8.41,8.41,0,0,1-1.73-.55v-1.92h.13a7.38,7.38,0,0,0,1.74.81,6.2,6.2,0,0,0,2,.33,4.28,4.28,0,0,0,1.24-.18,2.72,2.72,0,0,0,1.08-.64,2.66,2.66,0,0,0,.6-.93,3.5,3.5,0,0,0,.21-1.26,2.61,2.61,0,0,0-.25-1.18,2,2,0,0,0-.66-.77,2.92,2.92,0,0,0-1.15-.48,7,7,0,0,0-1.51-.15,11.05,11.05,0,0,0-1.54.11c-.49.07-.91.15-1.27.22v-7h8.13v1.59H59.09v3.59l.8-.05c.27,0,.51,0,.71,0a8.43,8.43,0,0,1,1.92.19,4.33,4.33,0,0,1,1.51.65,3.35,3.35,0,0,1,1.13,1.29A4.44,4.44,0,0,1,65.56,338.72Zm11.81,0a4.77,4.77,0,0,1-.35,1.8,4.09,4.09,0,0,1-.94,1.45,4.64,4.64,0,0,1-1.56,1,6.06,6.06,0,0,1-2.09.34,9.27,9.27,0,0,1-2.13-.24,8.41,8.41,0,0,1-1.73-.55v-1.92h.13a7.38,7.38,0,0,0,1.74.81,6.16,6.16,0,0,0,2,.33,4.33,4.33,0,0,0,1.24-.18,2.72,2.72,0,0,0,1.08-.64,2.66,2.66,0,0,0,.6-.93,3.74,3.74,0,0,0,.2-1.26,2.61,2.61,0,0,0-.24-1.18,2,2,0,0,0-.66-.77,2.92,2.92,0,0,0-1.15-.48,7,7,0,0,0-1.51-.15,10.94,10.94,0,0,0-1.54.11c-.49.07-.91.15-1.27.22v-7h8.12v1.59H70.9v3.59l.8-.05c.27,0,.51,0,.7,0a8.46,8.46,0,0,1,1.93.19,4.33,4.33,0,0,1,1.51.65A3.35,3.35,0,0,1,77,336.74,4.44,4.44,0,0,1,77.37,338.72Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M53.56,376.58H47.9v-1.65h5.66Zm12-6.4-6.12,11.48H57.53L64,369.75h-7.7v-1.59h9.25Zm11.75,4.73a9.81,9.81,0,0,1-1.14,5.34,4.52,4.52,0,0,1-7.09,0,10,10,0,0,1-1.11-5.3,9.84,9.84,0,0,1,1.13-5.31,4.49,4.49,0,0,1,7.09,0A9.84,9.84,0,0,1,77.34,374.91ZM75,379a5.86,5.86,0,0,0,.42-1.72,20.3,20.3,0,0,0,.12-2.39,20.85,20.85,0,0,0-.12-2.4,5.69,5.69,0,0,0-.43-1.72,2.42,2.42,0,0,0-.87-1.05,2.54,2.54,0,0,0-1.41-.36,2.6,2.6,0,0,0-1.42.36,2.44,2.44,0,0,0-.88,1.07,6,6,0,0,0-.42,1.75c-.07.72-.11,1.51-.11,2.36a22.27,22.27,0,0,0,.1,2.37,5.79,5.79,0,0,0,.43,1.71,2.43,2.43,0,0,0,.84,1.08,2.55,2.55,0,0,0,1.46.37,2.63,2.63,0,0,0,1.41-.35A2.33,2.33,0,0,0,75,379Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M141.73,516.3a9.73,9.73,0,0,1-1.15,5.35,4.53,4.53,0,0,1-7.08,0,10,10,0,0,1-1.12-5.3,9.74,9.74,0,0,1,1.14-5.31,3.92,3.92,0,0,1,3.54-1.72A3.87,3.87,0,0,1,140.6,511,9.81,9.81,0,0,1,141.73,516.3Zm-2.39,4.12a5.93,5.93,0,0,0,.43-1.72,26.13,26.13,0,0,0,0-4.79,5.33,5.33,0,0,0-.44-1.72,2.29,2.29,0,0,0-.87-1.05,2.49,2.49,0,0,0-1.4-.36,2.6,2.6,0,0,0-1.42.36,2.37,2.37,0,0,0-.88,1.07,5.34,5.34,0,0,0-.42,1.75,21.38,21.38,0,0,0-.11,2.36,22.4,22.4,0,0,0,.1,2.37,5.65,5.65,0,0,0,.42,1.71,2.3,2.3,0,0,0,.85,1.07,2.53,2.53,0,0,0,1.46.38,2.57,2.57,0,0,0,1.41-.36A2.18,2.18,0,0,0,139.34,520.42Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M221.66,523.06h-7.31v-1.38h2.81v-9h-2.81V511.4a9,9,0,0,0,1.22-.09,3.22,3.22,0,0,0,1-.28,1.84,1.84,0,0,0,.65-.58,1.72,1.72,0,0,0,.28-.94h1.41v12.17h2.76Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M299.86,523.06h-9.14v-1.89l1.9-1.64c.64-.54,1.24-1.08,1.79-1.62a17.81,17.81,0,0,0,2.38-2.68,3.87,3.87,0,0,0,.65-2.14,2.07,2.07,0,0,0-.7-1.65,2.84,2.84,0,0,0-1.93-.6,6,6,0,0,0-1.79.3,7.11,7.11,0,0,0-1.88.88h-.09v-1.9a8.34,8.34,0,0,1,1.72-.58,8.55,8.55,0,0,1,2.08-.27,4.87,4.87,0,0,1,3.26,1,3.39,3.39,0,0,1,1.18,2.71,5.18,5.18,0,0,1-.2,1.45,5.09,5.09,0,0,1-.57,1.26,9.18,9.18,0,0,1-.84,1.1c-.31.37-.7.77-1.15,1.21-.65.63-1.32,1.25-2,1.85l-1.94,1.65h7.27Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M380.05,516.56a3.16,3.16,0,0,1,.72,1,3.65,3.65,0,0,1,.28,1.52,4.3,4.3,0,0,1-.34,1.7,4.06,4.06,0,0,1-.94,1.34,4.25,4.25,0,0,1-1.61.94,6.42,6.42,0,0,1-2,.3,9.1,9.1,0,0,1-2.21-.27,9.66,9.66,0,0,1-1.79-.58v-1.9h.14a7.41,7.41,0,0,0,1.81.85,6.7,6.7,0,0,0,2,.33,4.22,4.22,0,0,0,1.22-.19,2.41,2.41,0,0,0,1-.56,2.58,2.58,0,0,0,.62-.88,3.07,3.07,0,0,0,.21-1.22,2.6,2.6,0,0,0-.24-1.19,1.88,1.88,0,0,0-.63-.76,2.66,2.66,0,0,0-1-.38,7.11,7.11,0,0,0-1.25-.1h-.82V515h.63a3.8,3.8,0,0,0,2.2-.57,1.94,1.94,0,0,0,.82-1.69,1.67,1.67,0,0,0-.2-.85,1.78,1.78,0,0,0-.58-.61,2.78,2.78,0,0,0-.84-.33,5.89,5.89,0,0,0-1-.09,6.28,6.28,0,0,0-1.84.31,7.87,7.87,0,0,0-1.83.87h-.09v-1.89a8.43,8.43,0,0,1,1.71-.58,8.66,8.66,0,0,1,2.09-.28,7.47,7.47,0,0,1,1.74.19,4.14,4.14,0,0,1,1.36.58,2.91,2.91,0,0,1,1,1,3,3,0,0,1,.34,1.44,2.78,2.78,0,0,1-.8,2,3.42,3.42,0,0,1-1.87,1v.13a4.64,4.64,0,0,1,1,.31A3.29,3.29,0,0,1,380.05,516.56Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M464.55,519.26h-2v3.8H460.8v-3.8h-6.46v-2.09l6.54-7.61h1.67v8.25h2Zm-3.75-1.45v-6.1l-5.23,6.1Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M541.45,518.54a4.77,4.77,0,0,1-.35,1.8,4.09,4.09,0,0,1-.94,1.45,4.57,4.57,0,0,1-1.56,1,6,6,0,0,1-2.08.33,9.42,9.42,0,0,1-2.14-.24,8.41,8.41,0,0,1-1.73-.55v-1.91h.13a8.28,8.28,0,0,0,1.74.81,6.48,6.48,0,0,0,2,.32,4.28,4.28,0,0,0,1.24-.18,2.49,2.49,0,0,0,1.08-.64,2.34,2.34,0,0,0,.6-.93,3.47,3.47,0,0,0,.21-1.26,2.48,2.48,0,0,0-.25-1.18,1.9,1.9,0,0,0-.66-.77,2.86,2.86,0,0,0-1.15-.48A7,7,0,0,0,536,516a11.05,11.05,0,0,0-1.54.11l-1.27.22v-7h8.13v1.59H535v3.59l.8,0,.71,0a8.43,8.43,0,0,1,1.92.19,4.25,4.25,0,0,1,1.51.65,3.5,3.5,0,0,1,1.13,1.29A4.34,4.34,0,0,1,541.45,518.54Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M124.52,313.06V310.7h-7.39v2.36h2.46V324h2.47V313.06ZM134.37,324v-5.63c0-3.28-1.51-4.59-3.91-4.59a3.53,3.53,0,0,0-2.53.93v-4h-2.4V324h2.4v-5.06c0-2.19.73-2.95,2.1-2.95s1.95.83,1.95,2.92V324Zm6.49-7.9v-2.31h-.18a2.23,2.23,0,0,0-2.16,1.21v-1h-2.2v10h2.4v-5.54C138.72,316.91,139.42,316.13,140.86,316.1Zm10.85,3.06a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.15,10.44,4.91,4.91,0,0,0,4.75-3.18h-2.61a2.54,2.54,0,0,1-2.2,1,2.63,2.63,0,0,1-2.75-2h7.72A4,4,0,0,0,151.71,319.16ZM149.35,318h-5.52a2.65,2.65,0,0,1,2.77-2A2.54,2.54,0,0,1,149.35,318Zm10.49,2.86c0-1.47-.69-2.27-2.77-2.91-1.64-.53-1.69-.56-1.69-1.08a.86.86,0,0,1,.91-.85.89.89,0,0,1,.94.79h2.34a3.12,3.12,0,0,0-3.28-3,3.16,3.16,0,0,0-3.31,3c0,1.45.79,2.28,2.77,3,1.6.54,1.7.7,1.7,1.28a1,1,0,0,1-1.08,1c-.71,0-1.1-.36-1.34-1.21h-2.41a3.62,3.62,0,0,0,7.22,0ZM170,324v-5.63c0-3.28-1.51-4.59-3.91-4.59a3.55,3.55,0,0,0-2.54.93v-4h-2.39V324h2.39v-5.06c0-2.19.74-2.95,2.11-2.95s1.94.83,1.94,2.92V324Zm12.12-4.91a5.3,5.3,0,1,0-5.31,5.14A5.25,5.25,0,0,0,182.14,319.09Zm-2.41-.08a2.89,2.89,0,1,1-2.9-3A3,3,0,0,1,179.73,319Zm6.15,5V310.7h-2.39V324Zm12,0V310.7h-2.39v4.21a4.24,4.24,0,0,0-3.12-1.24,5.11,5.11,0,0,0-5,5.33,5,5,0,0,0,5,5.23,4.07,4.07,0,0,0,3.3-1.53V324Zm-2.21-5a3,3,0,0,1-2.9,3.08,3,3,0,0,1-3-3.15,3,3,0,0,1,2.92-3A3,3,0,0,1,195.66,319Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M235.91,274.25a6.4,6.4,0,0,0-6.28,1.33,9.49,9.49,0,0,0-2.13,4.31l-.78,2.94,12.86,3.41.79-3a9,9,0,0,0,.39-4.35A6.25,6.25,0,0,0,235.91,274.25Zm-.64,2.4a4.11,4.11,0,0,1,3.06,2.8,6.64,6.64,0,0,1-.26,3.28l-.14.53-8.3-2.21.13-.47a6.5,6.5,0,0,1,1.34-2.94A4.09,4.09,0,0,1,235.27,276.65Zm5.35-13.22a5.09,5.09,0,0,0-6.5,3.6,5.22,5.22,0,1,0,10.13,2.54,4.93,4.93,0,0,0-1.87-5.42l-.66,2.53a2.53,2.53,0,0,1,.39,2.37,2.62,2.62,0,0,1-2.6,2.16l2-7.46A3.62,3.62,0,0,0,240.62,263.43Zm-1.75,2-1.42,5.34a2.66,2.66,0,0,1-1.2-3.19A2.56,2.56,0,0,1,238.87,265.4Zm4.65-13.6a4.91,4.91,0,0,0-6.28,3.47,4.21,4.21,0,0,0,.51,3.53l-1.13-.3-.56,2.12L248.92,264l.61-2.31-4.12-1.1a4.24,4.24,0,0,0,1.91-2.65A5,5,0,0,0,243.52,251.8Zm-.56,2.34a2.89,2.89,0,1,1-3.68,2A2.9,2.9,0,0,1,243,254.14Zm3.64-13.54a5.3,5.3,0,1,0,3.62,6.45A5.24,5.24,0,0,0,246.6,240.6Zm-.68,2.31a2.89,2.89,0,1,1-3.67,2A3,3,0,0,1,245.92,242.91Zm6.39-4.66-12.85-3.41-.62,2.31,12.86,3.41Zm3.09-11.63-9.64-2.55-.56,2.12,1.28.34a3.72,3.72,0,0,0-2.35,2.75,5,5,0,0,0,3.78,6.25,4.93,4.93,0,0,0,6.3-3.52,4,4,0,0,0-.63-3.6l1.25.34Zm-5.33.94a2.92,2.92,0,1,1-1.49,5.65,2.93,2.93,0,1,1,1.49-5.65Zm-.69-9.07-2.23-.59,0,.17a2.24,2.24,0,0,0,.61,2.4l-.94-.25-.56,2.12,9.63,2.56.62-2.31-5.36-1.43C249.61,220.77,249.05,219.89,249.38,218.49ZM258,217l-9.64-2.55-.61,2.31,9.63,2.56Zm-11-2.94-2.31-.62-.62,2.32,2.32.61Zm13.31-5.67-2.07-.55L257,212.42l-4.37-5.7-2.07-.55-1.73,6.52,2.07.55,1-3.75,4.37,5.7,2.08.55Zm2.93-11-9.64-2.55L253,197l1.29.34a3.72,3.72,0,0,0-2.35,2.75,5,5,0,0,0,3.78,6.25,4.93,4.93,0,0,0,6.3-3.52,4,4,0,0,0-.63-3.6l1.25.34Zm-5.33.94a2.77,2.77,0,0,1,2.1,3.55,2.8,2.8,0,0,1-3.59,2.11,2.93,2.93,0,1,1,1.49-5.66Zm-.67-8.71-2.11-.56-.37,1.39-3.22-.85-.61,2.31,3.22.85-.3,1.13,2.1.56.3-1.13,7.54,2,.61-2.31-7.53-2Zm8.45-1.48L256,185.57l-.61,2.31,9.64,2.56Zm-11-2.95-2.32-.61-.61,2.31,2.31.62Zm9.37-10a5.3,5.3,0,1,0,3.62,6.46A5.25,5.25,0,0,0,264,175.17Zm-.68,2.32a2.89,2.89,0,1,1-3.67,2A2.94,2.94,0,0,1,263.28,177.49Zm8.05-10.92-5.17-1.37a5.56,5.56,0,0,0-3.49-.18,3.61,3.61,0,0,0-2.19,2.64,3.71,3.71,0,0,0,.43,3l-.92-.24-.57,2.14,9.64,2.55.61-2.31-4.54-1.2a4.38,4.38,0,0,1-2.21-1,2,2,0,0,1-.44-1.94c.31-1.15.95-1.72,3.52-1l4.72,1.25Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M162.87,397c0-1.8-.73-3-3.43-4a10.73,10.73,0,0,1-1.48-.59,1.4,1.4,0,0,1-.74-1.21,1.3,1.3,0,0,1,1.37-1.35,1.33,1.33,0,0,1,1.4,1.4h2.56a3.91,3.91,0,1,0-5,3.62,7.63,7.63,0,0,1,2.3,1,1.67,1.67,0,0,1,.62,1.35,1.64,1.64,0,0,1-1.8,1.62,1.61,1.61,0,0,1-1.8-1.66h-2.58a4.31,4.31,0,0,0,8.62-.23Zm5.82-3.76V391h-1.44V387.7h-2.39V391h-1.17v2.18h1.17V401h2.39v-7.79Zm3.6,7.79V391H169.9v10Zm0-11.41v-2.4h-2.4v2.4ZM189.18,401v-5.76c0-3-1.41-4.45-4-4.45a3.66,3.66,0,0,0-3.21,1.55,3.11,3.11,0,0,0-2.93-1.55,3,3,0,0,0-2.59,1.17V391h-2.2v10h2.39v-4.91c0-2.36.56-3.1,1.95-3.1s1.94.58,1.94,2.54V401h2.4v-4.91c0-2.38.68-3.1,2-3.1,1.12,0,1.87.54,1.87,2.54V401ZM200,401V391h-2.39v4.7a4.59,4.59,0,0,1-.38,2.39,2.05,2.05,0,0,1-1.82.92c-1.15,0-1.89-.49-1.89-3.13V391h-2.39v5.34c0,3.51,1.47,4.86,3.8,4.86a3.61,3.61,0,0,0,2.86-1.18V401Zm4.32,0V387.7h-2.4V401Zm10.8,0V391h-2.4v4.7a4.62,4.62,0,0,1-.37,2.39,2.05,2.05,0,0,1-1.82.92c-1.15,0-1.89-.49-1.89-3.13V391h-2.4v5.34c0,3.51,1.48,4.86,3.8,4.86a3.63,3.63,0,0,0,2.87-1.18V401Zm8.51-3.17c0-1.47-.69-2.27-2.78-2.91-1.63-.53-1.69-.56-1.69-1.08a.87.87,0,0,1,.92-.85.9.9,0,0,1,.94.79h2.34a3.31,3.31,0,0,0-6.59.06c0,1.45.79,2.28,2.77,3,1.6.54,1.69.7,1.69,1.28a1,1,0,0,1-1.08,1c-.7,0-1.1-.36-1.33-1.21h-2.41a3.62,3.62,0,0,0,7.22,0Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M350.31,176.06l4.39-4.22c.91,2.29,2.5,3.17,4.55,2.89a4.18,4.18,0,0,0,3.06-1.82c.61-1,.74-1.94.49-3.74l-.51-3.8-13.18,1.77.33,2.45,5.05-.68-4.59,4.14Zm8.53-3.78c-1.39.19-2.1-.53-2.36-2.42l-.16-1.2,4-.53.15,1.09C360.74,171.54,360,172.12,358.84,172.28Zm-2.25,14.2a5.1,5.1,0,0,0,4.63-5.82,5.22,5.22,0,1,0-10.33,1.54,4.91,4.91,0,0,0,3.8,4.28l-.35-2.59a2.51,2.51,0,0,1-1.27-2,2.62,2.62,0,0,1,1.57-3l1,7.65A3.55,3.55,0,0,0,356.59,186.48Zm.87-2.5-.74-5.47a2.65,2.65,0,0,1,2.33,2.48A2.54,2.54,0,0,1,357.46,184Zm.91,14.35a4.9,4.9,0,0,0,4.47-5.61,4.2,4.2,0,0,0-1.82-3.06l1.15-.16-.29-2.18L348.7,189.1l.32,2.37,4.22-.57a4.3,4.3,0,0,0-.75,3.19A5,5,0,0,0,358.37,198.33ZM358,196a2.88,2.88,0,0,1-3.35-2.4A3,3,0,1,1,358,196Zm1.81,13.9a5.3,5.3,0,1,0-5.8-4.57A5.23,5.23,0,0,0,359.8,209.85Zm-.25-2.4a2.89,2.89,0,1,1,2.62-3.27A3,3,0,0,1,359.55,207.45Zm-4.12,6.76,13.18-1.77-.31-2.37-13.19,1.77Zm1.6,11.92,9.89-1.32-.3-2.18-1.32.18a3.71,3.71,0,0,0,1.12-3.44,5,5,0,0,0-5.88-4.33,4.93,4.93,0,0,0-4.47,5.67,4.05,4.05,0,0,0,1.95,3.08l-1.28.17Zm4.57-2.9a2.92,2.92,0,1,1-.8-5.79,2.93,2.93,0,1,1,.8,5.79Zm4.11,8.12L368,231l0-.18a2.23,2.23,0,0,0-1.49-2l1-.13-.3-2.18-9.88,1.33.32,2.37,5.49-.73C364.62,229.33,365.48,229.92,365.71,231.35ZM358.36,236l9.88-1.33-.32-2.37L358,233.62Zm11.31-1.5,2.37-.32-.32-2.37-2.37.32Zm-10.13,10.33,2.13-.28-.63-4.69,6.22,3.59,2.12-.28-.9-6.69-2.12.28.52,3.86-6.23-3.6-2.12.29Zm1.52,11.3,9.88-1.33-.29-2.18-1.32.18a3.71,3.71,0,0,0,1.12-3.44,5,5,0,0,0-5.89-4.33,4.93,4.93,0,0,0-4.46,5.67,4,4,0,0,0,1.95,3.08l-1.28.17Zm4.57-2.91a2.92,2.92,0,1,1-.8-5.79,2.93,2.93,0,1,1,.8,5.79Zm3.95,7.8,2.16-.3-.19-1.42,3.3-.45-.32-2.37-3.3.45-.16-1.16-2.15.29.15,1.15-7.72,1,.31,2.37,7.73-1Zm-7.25,4.6,9.89-1.33-.32-2.37L362,263.23Zm11.32-1.5,2.37-.32-.32-2.38-2.37.32ZM368.82,277a5.3,5.3,0,1,0-5.81-4.58A5.25,5.25,0,0,0,368.82,277Zm-.25-2.4a2.9,2.9,0,1,1,2.61-3.28A3,3,0,0,1,368.57,274.55Zm-3.27,13.16,5.3-.71c1.77-.24,2.6-.53,3.3-1.17a3.62,3.62,0,0,0,1-3.28,3.74,3.74,0,0,0-1.55-2.63l.94-.12-.29-2.2-9.89,1.33.32,2.37,4.66-.62a4.24,4.24,0,0,1,2.42.07,2,2,0,0,1,1.15,1.63c.16,1.17-.21,1.95-2.85,2.31l-4.84.64Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M470.22,363l-3.6-4.91c2.4-.6,3.48-2.06,3.48-4.13a4.13,4.13,0,0,0-1.41-3.27c-.86-.74-1.81-1-3.63-1h-3.84V363h2.47v-5.09l3.49,5.09Zm-2.61-9c0,1.4-.81,2-2.71,2h-1.21v-4h1.1C467.13,352.06,467.61,352.85,467.61,354Zm13.78,4.12a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.14,10.44,4.89,4.89,0,0,0,4.75-3.18h-2.61a2.52,2.52,0,0,1-2.19,1,2.63,2.63,0,0,1-2.76-2h7.73A4,4,0,0,0,481.39,358.16ZM479,357H473.5a2.66,2.66,0,0,1,2.77-2A2.55,2.55,0,0,1,479,357Zm10.49,2.86c0-1.47-.69-2.27-2.78-2.91-1.63-.53-1.69-.56-1.69-1.08A.87.87,0,0,1,486,355a.88.88,0,0,1,.93.79h2.34a3.3,3.3,0,0,0-6.58.06c0,1.45.79,2.28,2.77,3,1.6.54,1.69.7,1.69,1.28a1,1,0,0,1-1.08,1c-.7,0-1.1-.36-1.33-1.21H482.3a3.62,3.62,0,0,0,7.22,0Zm5.71-4.62V353h-1.44V349.7h-2.4V353h-1.17v2.18h1.17V363h2.4v-7.79Zm3.59,7.79V353h-2.39v10Zm0-11.41v-2.4h-2.39v2.4ZM509.61,363v-5.35c0-1.78-.18-2.64-.72-3.42a3.61,3.61,0,0,0-3.12-1.44A3.74,3.74,0,0,0,503,354v-1h-2.21v10h2.39v-4.7a4.22,4.22,0,0,1,.4-2.39,2,2,0,0,1,1.76-.92c1.19,0,1.91.47,1.91,3.13V363Zm12-1.89V353h-2.29v1.26a3.74,3.74,0,0,0-3.25-1.5,4.91,4.91,0,0,0-4.92,5.15c0,3.08,2,5.29,4.9,5.29a3.89,3.89,0,0,0,3.27-1.54c-.09,2.14-1,3.18-2.79,3.18a3,3,0,0,1-2.5-1.06h-2.72A5.21,5.21,0,0,0,516.4,367C519.5,367,521.57,365.39,521.57,361.11Zm-2.39-3.06a2.76,2.76,0,0,1-2.85,3,2.72,2.72,0,0,1-2.81-3A2.76,2.76,0,0,1,516.3,355,2.83,2.83,0,0,1,519.18,358.05Zm15.88,1.78c0-1.47-.68-2.27-2.77-2.91-1.64-.53-1.69-.56-1.69-1.08a.86.86,0,0,1,.91-.85.89.89,0,0,1,.94.79h2.34a3.12,3.12,0,0,0-3.28-3,3.16,3.16,0,0,0-3.31,3c0,1.45.79,2.28,2.77,3,1.61.54,1.7.7,1.7,1.28a1,1,0,0,1-1.08,1c-.71,0-1.1-.36-1.34-1.21h-2.41a3.62,3.62,0,0,0,7.22,0Zm5.71-4.62V353h-1.44V349.7h-2.39V353h-1.17v2.18h1.17V363h2.39v-7.79ZM551.89,363V353H549.7v1.33a3.71,3.71,0,0,0-3.26-1.57,5,5,0,0,0-5.08,5.26,4.93,4.93,0,0,0,5,5.18,4,4,0,0,0,3.31-1.53V363Zm-2.26-4.91a2.93,2.93,0,1,1-5.85,0,2.93,2.93,0,1,1,5.85,0Zm8.24-2.88V353h-1.44V349.7H554V353h-1.17v2.18H554V363h2.39v-7.79Zm11,3a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.15,10.44,4.91,4.91,0,0,0,4.75-3.18H566a2.54,2.54,0,0,1-2.2,1,2.63,2.63,0,0,1-2.75-2h7.72A4,4,0,0,0,568.87,358.16ZM566.51,357H561a2.66,2.66,0,0,1,2.77-2A2.54,2.54,0,0,1,566.51,357Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M367.05,493V479.7h-2.47v5.36h-4.75V479.7h-2.47V493h2.47v-5.58h4.75V493Zm11.55-10h-2.76l-2.41,6.46L371.22,483h-2.74l3.66,9-1.88,4.27h2.58Zm11.63,5a4.92,4.92,0,0,0-5-5.19A4.23,4.23,0,0,0,382,484.2V483h-2.19v13.3h2.39v-4.27a4.27,4.27,0,0,0,3.06,1.17A5,5,0,0,0,390.23,488Zm-2.41,0a2.89,2.89,0,1,1-2.87-3A2.9,2.9,0,0,1,387.82,488Zm13.82.13a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.15,10.44,4.91,4.91,0,0,0,4.75-3.18h-2.61a2.54,2.54,0,0,1-2.2,1,2.63,2.63,0,0,1-2.75-2h7.72A4,4,0,0,0,401.64,488.16ZM399.28,487h-5.52a2.66,2.66,0,0,1,2.77-2A2.54,2.54,0,0,1,399.28,487Zm8.44-1.87v-2.31h-.18a2.23,2.23,0,0,0-2.16,1.21v-1h-2.2v10h2.4v-5.54C405.58,485.91,406.28,485.13,407.72,485.1ZM419.39,488a4.92,4.92,0,0,0-5-5.19,4.2,4.2,0,0,0-3.27,1.41V483H409v13.3h2.39v-4.27a4.27,4.27,0,0,0,3.06,1.17A5,5,0,0,0,419.39,488ZM417,488a2.89,2.89,0,0,1-2.83,3,3,3,0,1,1,2.83-3Zm14,.06a5.3,5.3,0,1,0-5.31,5.14A5.25,5.25,0,0,0,431,488.09Zm-2.41-.08a2.89,2.89,0,1,1-2.9-3A3,3,0,0,1,428.59,488Zm6.15,5V479.7h-2.39V493Zm12,0V483h-2.2v1.33a3.71,3.71,0,0,0-3.26-1.57,5,5,0,0,0-5.07,5.26,4.92,4.92,0,0,0,5,5.18,4,4,0,0,0,3.31-1.53V493Zm-2.27-4.91a2.93,2.93,0,1,1-5.85,0,2.93,2.93,0,1,1,5.85,0Zm8.59-3v-2.31h-.18a2.23,2.23,0,0,0-2.16,1.21v-1h-2.2v10H451v-5.54C451,485.91,451.65,485.13,453.09,485.1Zm3.62,7.9V483h-2.39v10Zm0-11.41v-2.4h-2.39v2.4Zm8.9,11.41v-2.14h-4.74l4.4-5.69V483h-6.75v2.14h3.88L458,490.86V493ZM477,493V483h-2.2v1.33a3.68,3.68,0,0,0-3.25-1.57,5,5,0,0,0-5.08,5.26,4.93,4.93,0,0,0,5,5.18,4,4,0,0,0,3.31-1.53V493Zm-2.27-4.91a2.93,2.93,0,1,1-5.85,0,2.93,2.93,0,1,1,5.85,0Zm8.25-2.88V483h-1.44V479.7h-2.39V483H478v2.18h1.18V493h2.39v-7.79Zm3.6,7.79V483h-2.4v10Zm0-11.41v-2.4h-2.39v2.4Zm12.09,6.5a5.31,5.31,0,1,0-5.31,5.14A5.25,5.25,0,0,0,498.7,488.09Zm-2.42-.08a2.89,2.89,0,1,1-2.89-3A3,3,0,0,1,496.28,488Zm12.61,5v-5.35c0-1.78-.18-2.64-.72-3.42a3.58,3.58,0,0,0-3.11-1.44,3.74,3.74,0,0,0-2.81,1.19v-1H500v10h2.39v-4.7a4.22,4.22,0,0,1,.4-2.39,2,2,0,0,1,1.76-.92c1.19,0,1.91.47,1.91,3.13V493Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M301.46,388.46h-6.62v3.69h5.69v1.55h-5.69V400H293.1V386.91h8.36ZM311,400h-1.64V399c-.15.1-.35.24-.6.43a4.48,4.48,0,0,1-.72.42,5,5,0,0,1-.95.33,4.63,4.63,0,0,1-1.25.14,3.11,3.11,0,0,1-2.25-.88,2.93,2.93,0,0,1-.93-2.24,3.09,3.09,0,0,1,.48-1.8,3.2,3.2,0,0,1,1.37-1.09,7.36,7.36,0,0,1,2.15-.53c.84-.1,1.74-.17,2.7-.22v-.25a1.94,1.94,0,0,0-.2-.93,1.42,1.42,0,0,0-.56-.58,2.18,2.18,0,0,0-.85-.27,6.83,6.83,0,0,0-1-.08,6.74,6.74,0,0,0-1.45.18,11.7,11.7,0,0,0-1.65.49h-.09v-1.68c.33-.08.79-.18,1.4-.29a11.11,11.11,0,0,1,1.8-.15,7.92,7.92,0,0,1,1.8.17,3.48,3.48,0,0,1,1.34.58,2.55,2.55,0,0,1,.84,1.05,3.71,3.71,0,0,1,.29,1.59Zm-1.64-2.42v-2.73c-.5,0-1.1.07-1.78.13a8.55,8.55,0,0,0-1.62.26,2.51,2.51,0,0,0-1.15.63,1.52,1.52,0,0,0-.44,1.17,1.57,1.57,0,0,0,.51,1.27,2.41,2.41,0,0,0,1.55.42,3.85,3.85,0,0,0,1.6-.33A7.55,7.55,0,0,0,309.31,397.58Zm6.6-9h-1.86v-1.71h1.86Zm-.1,11.46h-1.66v-9.82h1.66Zm4.93,0h-1.65V386.32h1.65Zm11.49-4.74H325a4.31,4.31,0,0,0,.27,1.59,2.87,2.87,0,0,0,.75,1.09,2.8,2.8,0,0,0,1.08.64,4.36,4.36,0,0,0,1.39.21,5.54,5.54,0,0,0,2-.4,5,5,0,0,0,1.45-.79H332v1.8a13.29,13.29,0,0,1-1.71.59,6.83,6.83,0,0,1-1.82.24,5.29,5.29,0,0,1-3.82-1.32,5,5,0,0,1-1.37-3.76,5.4,5.4,0,0,1,1.31-3.82,4.49,4.49,0,0,1,3.46-1.42,4,4,0,0,1,3.06,1.16,4.65,4.65,0,0,1,1.08,3.3ZM330.62,394a2.87,2.87,0,0,0-.66-2,2.5,2.5,0,0,0-1.95-.71,2.87,2.87,0,0,0-2.12.78A3,3,0,0,0,325,394Zm12.08,6h-1.65v-1a6.08,6.08,0,0,1-1.49,1,4,4,0,0,1-1.68.34,3.33,3.33,0,0,1-2.79-1.35,6,6,0,0,1-1-3.75,6.65,6.65,0,0,1,.35-2.23,5.3,5.3,0,0,1,1-1.66,4.2,4.2,0,0,1,1.39-1,4.11,4.11,0,0,1,1.65-.35,5.13,5.13,0,0,1,1.37.17,5.78,5.78,0,0,1,1.26.5v-4.26h1.65Zm-1.65-2.42V392a5.89,5.89,0,0,0-1.2-.41,5.14,5.14,0,0,0-1.15-.12,2.58,2.58,0,0,0-2.16,1,4.26,4.26,0,0,0-.77,2.74,4.86,4.86,0,0,0,.59,2.66,2.12,2.12,0,0,0,1.92.91,3.5,3.5,0,0,0,1.42-.31A6.2,6.2,0,0,0,341.05,397.58Zm-60.59,13H278.6v-1.71h1.86Zm-.1,11.46h-1.65v-9.82h1.65Zm11.48,0h-1.65v-5.59a10.18,10.18,0,0,0-.08-1.27,2.55,2.55,0,0,0-.29-.93,1.36,1.36,0,0,0-.64-.54,2.66,2.66,0,0,0-1.07-.19,3.46,3.46,0,0,0-1.41.34,6.68,6.68,0,0,0-1.42.85V422h-1.65v-9.82h1.65v1.09a7.07,7.07,0,0,1,1.6-1,4.22,4.22,0,0,1,1.7-.36,3,3,0,0,1,2.42,1,4.07,4.07,0,0,1,.84,2.76Zm5-11.46h-1.87v-1.71h1.87ZM296.69,422H295v-9.82h1.65Zm8.37-.09a8.78,8.78,0,0,1-1,.2,6,6,0,0,1-1,.08,3.06,3.06,0,0,1-2.28-.8,3.66,3.66,0,0,1-.79-2.6v-5.22h-1.11v-1.39H300v-2.82h1.66v2.82h3.41v1.39h-3.41v4.48c0,.51,0,.91,0,1.21a2,2,0,0,0,.25.81,1.22,1.22,0,0,0,.52.51,2.54,2.54,0,0,0,1,.16,3.74,3.74,0,0,0,.85-.11c.29-.08.5-.15.63-.2h.09Zm3.78-11.37H307v-1.71h1.87ZM308.73,422h-1.65v-9.82h1.65Zm10.9,0H318V421l-.59.43a5.55,5.55,0,0,1-.72.42,5.27,5.27,0,0,1-.95.33,4.76,4.76,0,0,1-1.26.14,3.14,3.14,0,0,1-2.25-.88,3,3,0,0,1-.92-2.24,3.16,3.16,0,0,1,.47-1.8,3.2,3.2,0,0,1,1.37-1.09,7.43,7.43,0,0,1,2.16-.53c.83-.1,1.73-.17,2.69-.22v-.25a1.83,1.83,0,0,0-.2-.93,1.36,1.36,0,0,0-.56-.58,2.13,2.13,0,0,0-.84-.27,6.83,6.83,0,0,0-1-.08,6.66,6.66,0,0,0-1.45.18,11,11,0,0,0-1.65.49h-.09v-1.68c.32-.08.79-.18,1.4-.29a11.11,11.11,0,0,1,1.8-.15,8,8,0,0,1,1.8.17,3.5,3.5,0,0,1,1.33.58,2.57,2.57,0,0,1,.85,1.05,3.86,3.86,0,0,1,.29,1.59ZM318,419.58v-2.73l-1.78.13a8.55,8.55,0,0,0-1.62.26,2.62,2.62,0,0,0-1.15.63A1.55,1.55,0,0,0,313,419a1.57,1.57,0,0,0,.51,1.27,2.42,2.42,0,0,0,1.56.42,3.77,3.77,0,0,0,1.59-.33A6.88,6.88,0,0,0,318,419.58Zm9.93,2.33a8.78,8.78,0,0,1-1,.2,6,6,0,0,1-1,.08,3.06,3.06,0,0,1-2.28-.8,3.66,3.66,0,0,1-.78-2.6v-5.22h-1.12v-1.39h1.12v-2.82h1.65v2.82h3.41v1.39H324.5v4.48c0,.51,0,.91,0,1.21a2.12,2.12,0,0,0,.25.81,1.19,1.19,0,0,0,.53.51,2.49,2.49,0,0,0,1,.16,3.74,3.74,0,0,0,.85-.11c.29-.08.5-.15.63-.2h.09Zm3.78-11.37h-1.87v-1.71h1.87ZM331.58,422h-1.65v-9.82h1.65Zm11.64-4.9a5.48,5.48,0,0,1-1.23,3.78,4.62,4.62,0,0,1-6.61,0,6.48,6.48,0,0,1,0-7.57,4.6,4.6,0,0,1,6.61,0A5.5,5.5,0,0,1,343.22,417.1Zm-1.71,0a4.41,4.41,0,0,0-.74-2.83,2.78,2.78,0,0,0-4.17,0,5.69,5.69,0,0,0,0,5.63,2.75,2.75,0,0,0,4.15,0A4.48,4.48,0,0,0,341.51,417.1ZM354,422h-1.65v-5.59a8.57,8.57,0,0,0-.08-1.27,2.37,2.37,0,0,0-.29-.93,1.34,1.34,0,0,0-.63-.54,2.7,2.7,0,0,0-1.07-.19,3.54,3.54,0,0,0-1.42.34,6.87,6.87,0,0,0-1.41.85V422h-1.65v-9.82h1.65v1.09a6.85,6.85,0,0,1,1.6-1,4.17,4.17,0,0,1,1.69-.36,3.06,3.06,0,0,1,2.43,1,4.06,4.06,0,0,1,.83,2.76Zm10.2-2.83a2.67,2.67,0,0,1-1.12,2.21,4.85,4.85,0,0,1-3,.86,7.39,7.39,0,0,1-2-.26,8.13,8.13,0,0,1-1.52-.57v-1.85h.08a7.18,7.18,0,0,0,1.75.94,5.36,5.36,0,0,0,1.83.34,3.52,3.52,0,0,0,1.71-.35,1.18,1.18,0,0,0,.61-1.11,1.12,1.12,0,0,0-.33-.88,3,3,0,0,0-1.28-.51l-.93-.18c-.37-.07-.72-.15-1-.23a3.45,3.45,0,0,1-1.83-1,2.53,2.53,0,0,1-.54-1.64,2.63,2.63,0,0,1,.25-1.14,2.76,2.76,0,0,1,.76-1,3.78,3.78,0,0,1,1.25-.65,5.68,5.68,0,0,1,1.7-.24,7.29,7.29,0,0,1,1.78.22,6.88,6.88,0,0,1,1.5.51v1.77h-.09a5.77,5.77,0,0,0-1.53-.78,5.22,5.22,0,0,0-1.78-.33,3.15,3.15,0,0,0-1.53.35,1.12,1.12,0,0,0-.62,1,1.1,1.1,0,0,0,.38.92,3,3,0,0,0,1.19.5l1,.21,1,.19a3.54,3.54,0,0,1,1.78.91A2.39,2.39,0,0,1,364.19,419.17Z" transform="translate(-12.26 -22.38)"/><g id="Button1"><circle class="cls-1" cx="177.24" cy="407.12" r="22.5"/><path class="cls-2" d="M191.1,441V423.26h-5.43v3h2.23V441Z" transform="translate(-12.26 -22.38)"/></g><g id="Button3"><circle class="cls-1" cx="398.24" cy="191.12" r="22.5"/><path class="cls-2" d="M416.43,215.36a4.57,4.57,0,0,0-2.76-4.58,3.43,3.43,0,0,0,1.49-3.05,4.66,4.66,0,0,0-4.78-4.78,4.53,4.53,0,0,0-4.7,4.54h3.24c.14-1.11.62-1.61,1.49-1.61a1.56,1.56,0,0,1,1.56,1.68c0,1.22-.72,1.78-2.74,1.82v3.08h.53c2.11,0,3.48,1.17,3.48,3a2.78,2.78,0,0,1-2.78,2.95,2.88,2.88,0,0,1-2.88-2.76h-3.22a5.89,5.89,0,0,0,6.12,5.69A5.78,5.78,0,0,0,416.43,215.36Z" transform="translate(-12.26 -22.38)"/></g><g id="Button2"><circle class="cls-1" cx="190.24" cy="191.12" r="22.5"/><path class="cls-2" d="M208.48,208.71A5.67,5.67,0,0,0,202.7,203c-3.41,0-5.88,2.35-5.88,6.43H200c0-2.11,1.1-3.5,2.76-3.5a2.63,2.63,0,0,1,2.57,2.78c0,1.16-.6,2.19-2,3.56l-6.31,6V221h11.47v-3h-7l3.63-3.29C207.74,212.29,208.48,210.9,208.48,208.71Z" transform="translate(-12.26 -22.38)"/></g><g id="Button4"><circle class="cls-1" cx="316.24" cy="454.12" r="22.5"/><path class="cls-2" d="M332.72,482.34v-2.86h-1.87V467.26h-2.69L320,479.74v2.6h7.66V485h3.19v-2.66Zm-5.06-2.86h-4.42l4.42-6.84Z" transform="translate(-12.26 -22.38)"/></g><path class="cls-9" d="M297,578.41v-3.15h-9.86v3.15h3.29V593h3.28V578.41ZM301.57,593V579.7h-3.2V593Zm0-15.22v-3.19H298.4v3.19ZM324.08,593v-7.68c0-4-1.87-5.93-5.37-5.93a4.88,4.88,0,0,0-4.27,2.07,4.17,4.17,0,0,0-3.92-2.07,4,4,0,0,0-3.45,1.56V579.7h-2.93V593h3.19v-6.55c0-3.15.75-4.13,2.59-4.13,1.68,0,2.6.77,2.6,3.38V593h3.19v-6.55c0-3.17.91-4.13,2.69-4.13,1.48,0,2.49.72,2.49,3.38V593ZM340,586.54a6.81,6.81,0,0,0-6.87-7.15,7,7,0,1,0,.19,13.92,6.54,6.54,0,0,0,6.34-4.25h-3.48a3.39,3.39,0,0,1-2.93,1.32,3.5,3.5,0,0,1-3.67-2.61h10.3A5.58,5.58,0,0,0,340,586.54ZM336.86,585h-7.37a3.55,3.55,0,0,1,3.7-2.64A3.4,3.4,0,0,1,336.86,585Zm19,11.33v-3.48c-2-1.27-3.36-4.2-3.36-7a8.65,8.65,0,0,1,3.36-7.08v-3.46a11.16,11.16,0,0,0-6.6,10.54C349.27,590.26,351.91,594.9,355.87,596.29Zm22-3.29v-7.68c0-4-1.87-5.93-5.38-5.93a4.88,4.88,0,0,0-4.27,2.07,4.16,4.16,0,0,0-3.91-2.07,4,4,0,0,0-3.46,1.56V579.7H357.9V593h3.2v-6.55c0-3.15.74-4.13,2.59-4.13,1.68,0,2.59.77,2.59,3.38V593h3.19v-6.55c0-3.17.92-4.13,2.69-4.13,1.49,0,2.5.72,2.5,3.38V593Zm11.41-4.22c0-2-.91-3-3.7-3.89-2.18-.7-2.25-.75-2.25-1.44a1.15,1.15,0,0,1,1.22-1.13,1.19,1.19,0,0,1,1.25,1.06h3.12a4.41,4.41,0,0,0-8.78.07c0,1.94,1.05,3,3.69,3.93,2.14.72,2.26.94,2.26,1.71a1.34,1.34,0,0,1-1.44,1.29c-.94,0-1.47-.48-1.78-1.6h-3.21c.33,3.09,2.23,4.53,4.87,4.53A4.6,4.6,0,0,0,389.26,588.78Zm8-3c0-4.44-2.64-9.09-6.6-10.49v3.48c2,1.28,3.36,4.2,3.36,7a8.67,8.67,0,0,1-3.36,7.08v3.46A11.17,11.17,0,0,0,397.24,585.75Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M12.26,323.34v3.46l13.49,4.78-13.49,4.77v3.46L30,332.9v-2.69Zm11.19-13.57a7.07,7.07,0,1,0,6.86,7.08A7,7,0,0,0,23.45,309.77Zm-.1,3.21a3.86,3.86,0,1,1-4,3.87A3.94,3.94,0,0,1,23.35,313ZM30,304.79H12.26V308H30Zm-10.39-8.17H16.7v1.92H12.26v3.19H16.7v1.56h2.91v-1.56H30v-3.19H19.61ZM30,281.79H16.7v2.92h1.78a5,5,0,0,0-2.09,4.35,6.66,6.66,0,0,0,7,6.77,6.58,6.58,0,0,0,6.91-6.7,5.37,5.37,0,0,0-2-4.42H30Zm-6.55,3a3.9,3.9,0,1,1,0,7.8,3.91,3.91,0,1,1,0-7.8Zm4-18.77H16.7v3h1.68a5,5,0,0,0-2,4.34A6.53,6.53,0,0,0,23.26,280c4.1,0,7-2.73,7-6.53a5.17,5.17,0,0,0-2.06-4.36c2.85.12,4.25,1.34,4.25,3.72a4,4,0,0,1-1.42,3.33v3.63c2.66-1.08,4.22-3.58,4.22-6.84C35.3,268.8,33.19,266,27.48,266Zm-4.08,3.19a3.66,3.66,0,0,1,4,3.79c0,2.28-1.56,3.75-4,3.75s-4.08-1.47-4.08-3.7A3.77,3.77,0,0,1,23.4,269.23Zm.14-19a6.8,6.8,0,0,0-7.15,6.86,7,7,0,1,0,13.92-.19,6.54,6.54,0,0,0-4.25-6.34v3.48A3.39,3.39,0,0,1,27.38,257a3.49,3.49,0,0,1-2.61,3.67V250.39A5,5,0,0,0,23.54,250.27ZM22,253.41v7.37a3.55,3.55,0,0,1-2.64-3.7A3.41,3.41,0,0,1,22,253.41Zm11.33-19H29.81c-1.27,2-4.2,3.36-7,3.36a8.65,8.65,0,0,1-7.08-3.36H12.26A11.17,11.17,0,0,0,22.8,241C27.26,241,31.9,238.37,33.29,234.4Zm-3.29-22H22.32c-4,0-5.93,1.88-5.93,5.38a4.88,4.88,0,0,0,2.07,4.27A4.16,4.16,0,0,0,16.39,226,4,4,0,0,0,18,229.44H16.7v2.93H30v-3.19H23.45c-3.15,0-4.13-.75-4.13-2.6,0-1.68.77-2.59,3.38-2.59H30V220.8H23.45c-3.17,0-4.13-.91-4.13-2.69,0-1.49.72-2.49,3.38-2.49H30Zm-17.74-18v3.45l13.49,4.78-13.49,4.78v3.45L30,204V201.3Zm10.49-7.64c-4.44,0-9.09,2.64-10.49,6.6h3.48c1.28-2,4.2-3.36,7-3.36a8.67,8.67,0,0,1,7.08,3.36h3.46A11.17,11.17,0,0,0,22.75,186.8Z" transform="translate(-12.26 -22.38)"/></svg>  
+                    <!-- insert description -->
+                    <div class="description">
+                        An action potential is an <b>electrical signal</b> that is transmitted from the dendrite to the terminal. An action potential is created by the exchange of ions across the membrane of a neuron. To understand more about a <b>neuron</b>, please visit the neuron page as seen above. 
+                        <br><br>
+                        The exchange of ions occurs due to the presence of a <b>concentration gradient</b>. A concentration gradient occurs because of the difference in the ion concentrations inside the neuron and outside the neuron. Ions always move from a higher concentration to a lower concentration, down the concentration gradient.
+                        <br><br>
+                        The cell membrane of a neuron is <b>highly permeable</b> to potassium ions, causing potassium to constantly leak out of the neuron through <b>potassium leak channels</b>. The membrane is <b>partially permeable</b> to sodium ions, causing sodium to leak into the neuron through <b>sodium leak channels</b>. Potassium and sodium ions are positively charged. Due to large amount of potassium ions leaving the neuron, the <b> extracellular fluid is generally more positively charged than the interior of the neuron. Therefore, the membrane potential of the neuron is negative.</b>
+                        <br><br>
+                        In order to maintain the state of the negative concentration gradient, the cell uses a <b>sodium potassium pump</b> that pumps two potassium ions back into the neuron and three sodium out of the neuron at the same time.
+                        <br><br>
+                        <b class="definition">An action potential is a temporary change in the negative state of the membrane potential to a positive state because of the flow of these ions.</b> Let's take a look at the step by step process below to see what happens in relation to the graph by clicking on the numbers! 
+                    </div>
+                </div>
+            <div class="mainPageArea3">
+            <!-- Creation of a row, that will be divided into two major columns -->
+                <div class="row">
+                    <!-- Creation of column 1 -->
+                    <div class="col-6 explain_table">
+                        <div class=" titleAP col-12">
+                            ACTION POTENTIAL STEPS
+                        </div>
+                        <!-- Accordion -->
+                        <div id="accordion">
+                            <!-- Stimulus Row -->
+                            <div class="row">
+                                <!-- The column should span the entire major column so set it to 12 -->
+                                <div class="col-12">
+                                    <!-- set up the class as card so jquery can apply functionality -->
+                                    <div class="card">
+                                        <!-- the header of the card -->
+                                        <div class="titleHeader card-header">
+                                            <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
+                                            <a class="cardLink cardLink1 card-link" data-toggle="collapse" href="#collapseOne">
+                                                <!-- create 1st button for stimulus -->
+                                                <button id="stimulusButton" class="buttons">1</button>
+                                                Stimulus
+                                            </a>
+                                        </div>
+                                        <!-- set the parent to accordion -->
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                            <!-- insert card body with the text about the resting state -->
+                                            <div class="card-body"> 
+                                                We start at the resting state, with a membrane potential of -70mV and the voltage gated sodium and potassium channels are completely closed. 
+                                                These voltaged gated ion channel will only open in response to an action potential. In order for an action potential to occur the membrane potential must reach the threshold potential(-55mV).
+                                                <br><br>
+                                                This is where the <b>stimlus</b> comes in. A stimulus must be strong enough to cause a rush of positive ions into the neuron, causing the membrane potential to also rise closer to -55mV. Once the threshold potential has been reached, <b>depolarization</b> will occur. If a stimulus is weak it will not produce an action potential and will result in <b>failed initiations</b>, as seen in the graph.  
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <!-- Depolarization Row -->
+                            <div class="row">
+                                <!-- The column should span the entire major column so set it to 12 -->
+                                <div class="col-12">
+                                    <!-- set up the class as card so jquery can apply functionality -->
+                                    <div class="card">
+                                        <!-- the header of the card -->
+                                        <div class="titleHeader card-header">
+                                            <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
+                                            <a class="cardLink cardLink2 collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                                <!-- create 2nd button for depolarization -->
+                                                <button id="depolarizationButton" class="buttons">2</button>
+                                                Depolarization
+                                            </a>
+                                        </div>
+                                        <!-- set the parent to accordion -->
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                            <!-- insert card body with the text about the depolarization -->
+                                            <div class="card-body">
+                                                When threshold has been reached the voltage gated sodium channels become activated causing them to open. When one sodium channel opens, all others follow very quickly. Sodium ions flood into the neuron, causing the membrane potential to rise significantly to reach a <b>positive membrane potential</b> of +40mV. This entire process is known as <b>depolarization</b>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Repolarization Row -->
+                            <div class="row">
+                                <!-- The column should span the entire major column so set it to 12 -->
+                                <div class="col-12">
+                                    <!-- set up the class as card so jquery can apply functionality -->
+                                    <div class="card">
+                                        <!-- the header of the card -->
+                                        <div class="titleHeader card-header">
+                                            <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
+                                            <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                                <!-- create 3rd button for repolarization -->
+                                                <button id="repolarizationButton" class="buttons">3</button>
+                                                Repolarization
+                                            </a>
+                                        </div>
+                                        <!-- set the parent to accordion -->
+                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                            <!-- insert card body with the text about the repolarization -->
+                                            <div class="card-body">
+                                                When the membrane potential reaches +40mV, the cell has to bring the potential back to its resting state. At this point, the <b>voltage gated sodium channels close</b>, stopping the flow of positive ions into the cell. The <b>voltage gated potassium channels open</b> causing potassium to flow out of the neuron; this is due to the presence of a concentration gradient. There is a higher concentration of potassium inside the cell, so it must flow out of neuron into the extracellular fluid. This causes the membrane potential to decrease, this is called <b>repolarization</b>.  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hyperpolarization Row -->
+                            <div class="row">
+                                <!-- The column should span the entire major column so set it to 12 -->
+                                <div class="col-12">
+                                    <!-- set up the class as card so jquery can apply functionality -->
+                                    <div class="card">
+                                        <!-- the header of the card -->
+                                        <div class="titleHeader card-header">
+                                            <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
+                                            <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                                <!-- create 4th button for hyperpolarization -->
+                                                <button id="hyperpolarizationButton" class="buttons">4</button>
+                                                Hyperpolarization
+                                            </a>
+                                        </div>
+                                        <!-- set the parent to accordion -->
+                                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                            <!-- insert card body with the text about the hyperpolarization -->
+                                            <div class="card-body">
+                                                Unlike voltage gated sodium channels, <b>voltage gated potassium channels cannot close immediately</b>, they take time to close. This delay in closing causes the voltage gated potassium channels to stay open longer. This results in the membrane potential dipping below the resting membrane potential (-70mV), called <b>hyperpolarization</b>. The sodium-potassium pump works to bring the cell back to its resting state.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Resting State Row -->
+                            <div class="row">
+                                <!-- The column should span the entire major column so set it to 12 -->
+                                <div class="col-12">
+                                    <!-- set up the class as card so jquery can apply functionality -->
+                                    <div class="card">
+                                        <!-- the header of the card -->
+                                        <div class="titleHeader card-header">
+                                            <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
+                                            <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                                <!-- create 5th button for resting state -->
+                                                <button id="restingStateButton" class="buttons">5</button>
+                                                Resting State
+                                            </a>
+                                        </div>
+                                        <!-- set the parent to accordion -->
+                                        <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                            <!-- insert card body with the text about the resting state -->
+                                            <div class="card-body">
+                                                Finally, the membrane potential is brought back to the restating state which is <b>-70mV</b> and the cell is prepared to receive another stimuli to produce another action potential. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Creation of column 2 -->
+                    <div class="col-6">
+                        <div class="row">
+                            <!-- The column should span the entire major column so set it to 6 -->
+                            <div class="graphAP col-12">
+                                ACTION POTENTIAL GRAPH
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 graph">
+                                <!-- The column should span the entire major column so set it to 6 -->
+                                <div id="actionPotentialGraph" class="GSAPSVGGRAPH">
+                                            <!-- SVG here -->
+                                            <svg id="Layer-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 614.74 573.91"><defs><style>.cls-1{fill:#9f9191;}.cls-2{fill:#fbfbfb;}.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8{fill:none;}.cls-3,.cls-7,.cls-8{stroke:#9f9191;}.cls-3{stroke-width:4.64px;}.cls-4,.cls-5,.cls-6{stroke:#fff;}.cls-4{stroke-width:3.48px;stroke-dasharray:6.97 3.48;}.cls-5{stroke-width:9.29px;}.cls-6{stroke-width:2.32px;}.cls-7{stroke-width:3px;}.cls-8{stroke-width:2px;}.cls-9{fill:#555353;}</style></defs><g id="Button5"><circle class="cls-1" cx="592.24" cy="329.12" r="22.5"/><path class="cls-2" d="M610.48,357.07c0-3.48-2.38-6.05-5.62-6.05a5.15,5.15,0,0,0-2.28.51l.58-3.27h5.62v-3h-8l-1.66,9.27,2.84.77a2.88,2.88,0,0,1,2.47-1.35,3.23,3.23,0,0,1,0,6.43,2.85,2.85,0,0,1-2.88-2.68h-3.19a6.08,6.08,0,0,0,6.17,5.61A6,6,0,0,0,610.48,357.07Z" transform="translate(-12.26 -22.38)"/></g><path class="cls-3" d="M84.45,335.26H245.33" transform="translate(-12.26 -22.38)"/><path class="cls-4" d="M79.37,378.45H565" transform="translate(-12.26 -22.38)"/><path class="cls-5" d="M84.45,375.53H233.68c3.85-12.59,8-25.88,12.09-39.25,14.29-46.25,28.87-93.55,33.37-116.1,33.69-169,45.42-158.88,55.25,3.66,4.76,78.48,25.66,168.32,45.29,201.86,30.74,52.53,47.57,70.42,87.7,9.09,36.72-56.13,50.25-58.57,102.74-59.26" transform="translate(-12.26 -22.38)"/><path class="cls-6" d="M233.68,375.53c11.21-10.28,27.92-14.28,47.82,0m-47.82,0c17.56-40.54,44.76-12,62,0Z" transform="translate(-12.26 -22.38)"/><path class="cls-3" d="M84.45,22.38V502.82h488.3" transform="translate(-12.26 -22.38)"/><path class="cls-7" d="M234.54,404.39V385.26" transform="translate(-12.26 -22.38)"/><path class="cls-1" d="M234.54,378.71l2.15,5.27,2.16,5.28h-8.62l2.15-5.28Z" transform="translate(-12.26 -22.38)"/><path class="cls-8" d="M284.32,406.68V387.55" transform="translate(-12.26 -22.38)"/><path class="cls-1" d="M284.32,381l2.15,5.27,2.15,5.28H280l2.16-5.28Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M53.08,101.92H48.13v5h-1.5v-5h-5v-1.45h5V95.53h1.5v4.94h4.95Zm12.81,1.39h-2v3.8H62.15v-3.8H55.68v-2.08l6.54-7.62h1.67v8.25h2Zm-3.74-1.45V95.77l-5.24,6.09Zm15.22-1.5a9.81,9.81,0,0,1-1.14,5.34,4.53,4.53,0,0,1-7.08,0,9.86,9.86,0,0,1-1.12-5.3,9.74,9.74,0,0,1,1.14-5.31,4.48,4.48,0,0,1,7.08,0A9.84,9.84,0,0,1,77.37,100.36ZM75,104.47a5.94,5.94,0,0,0,.42-1.72,20.42,20.42,0,0,0,.12-2.39,20.85,20.85,0,0,0-.12-2.4A5.34,5.34,0,0,0,75,96.24a2.29,2.29,0,0,0-.87-1,2.5,2.5,0,0,0-1.41-.36,2.54,2.54,0,0,0-1.41.36,2.37,2.37,0,0,0-.88,1.07A5.59,5.59,0,0,0,70,98c-.07.72-.11,1.5-.11,2.36s0,1.74.1,2.37a5.87,5.87,0,0,0,.43,1.71,2.43,2.43,0,0,0,.84,1.08,2.65,2.65,0,0,0,1.46.37,2.6,2.6,0,0,0,1.42-.36A2.3,2.3,0,0,0,75,104.47Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M77.3,214.35a9.73,9.73,0,0,1-1.15,5.35,4.53,4.53,0,0,1-7.08,0,10,10,0,0,1-1.11-5.3,9.75,9.75,0,0,1,1.13-5.31,3.92,3.92,0,0,1,3.54-1.72,3.87,3.87,0,0,1,3.54,1.75A9.81,9.81,0,0,1,77.3,214.35Zm-2.39,4.12a5.93,5.93,0,0,0,.43-1.72,20.49,20.49,0,0,0,.12-2.4,20.79,20.79,0,0,0-.12-2.39,5.33,5.33,0,0,0-.44-1.72,2.29,2.29,0,0,0-.87-1.05,2.49,2.49,0,0,0-1.4-.36,2.6,2.6,0,0,0-1.42.36,2.37,2.37,0,0,0-.88,1.07A5.88,5.88,0,0,0,69.9,212c-.07.72-.1,1.5-.1,2.36a22.27,22.27,0,0,0,.1,2.37,5.57,5.57,0,0,0,.42,1.71,2.3,2.3,0,0,0,.85,1.07,2.53,2.53,0,0,0,1.46.38,2.57,2.57,0,0,0,1.41-.36A2.18,2.18,0,0,0,74.91,218.47Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M53.68,337.92H48v-1.64h5.66Zm11.88.8a4.77,4.77,0,0,1-.35,1.8,4.09,4.09,0,0,1-.94,1.45,4.64,4.64,0,0,1-1.56,1,6,6,0,0,1-2.09.34,9.4,9.4,0,0,1-2.13-.24,8.41,8.41,0,0,1-1.73-.55v-1.92h.13a7.38,7.38,0,0,0,1.74.81,6.2,6.2,0,0,0,2,.33,4.28,4.28,0,0,0,1.24-.18,2.72,2.72,0,0,0,1.08-.64,2.66,2.66,0,0,0,.6-.93,3.5,3.5,0,0,0,.21-1.26,2.61,2.61,0,0,0-.25-1.18,2,2,0,0,0-.66-.77,2.92,2.92,0,0,0-1.15-.48,7,7,0,0,0-1.51-.15,11.05,11.05,0,0,0-1.54.11c-.49.07-.91.15-1.27.22v-7h8.13v1.59H59.09v3.59l.8-.05c.27,0,.51,0,.71,0a8.43,8.43,0,0,1,1.92.19,4.33,4.33,0,0,1,1.51.65,3.35,3.35,0,0,1,1.13,1.29A4.44,4.44,0,0,1,65.56,338.72Zm11.81,0a4.77,4.77,0,0,1-.35,1.8,4.09,4.09,0,0,1-.94,1.45,4.64,4.64,0,0,1-1.56,1,6.06,6.06,0,0,1-2.09.34,9.27,9.27,0,0,1-2.13-.24,8.41,8.41,0,0,1-1.73-.55v-1.92h.13a7.38,7.38,0,0,0,1.74.81,6.16,6.16,0,0,0,2,.33,4.33,4.33,0,0,0,1.24-.18,2.72,2.72,0,0,0,1.08-.64,2.66,2.66,0,0,0,.6-.93,3.74,3.74,0,0,0,.2-1.26,2.61,2.61,0,0,0-.24-1.18,2,2,0,0,0-.66-.77,2.92,2.92,0,0,0-1.15-.48,7,7,0,0,0-1.51-.15,10.94,10.94,0,0,0-1.54.11c-.49.07-.91.15-1.27.22v-7h8.12v1.59H70.9v3.59l.8-.05c.27,0,.51,0,.7,0a8.46,8.46,0,0,1,1.93.19,4.33,4.33,0,0,1,1.51.65A3.35,3.35,0,0,1,77,336.74,4.44,4.44,0,0,1,77.37,338.72Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M53.56,376.58H47.9v-1.65h5.66Zm12-6.4-6.12,11.48H57.53L64,369.75h-7.7v-1.59h9.25Zm11.75,4.73a9.81,9.81,0,0,1-1.14,5.34,4.52,4.52,0,0,1-7.09,0,10,10,0,0,1-1.11-5.3,9.84,9.84,0,0,1,1.13-5.31,4.49,4.49,0,0,1,7.09,0A9.84,9.84,0,0,1,77.34,374.91ZM75,379a5.86,5.86,0,0,0,.42-1.72,20.3,20.3,0,0,0,.12-2.39,20.85,20.85,0,0,0-.12-2.4,5.69,5.69,0,0,0-.43-1.72,2.42,2.42,0,0,0-.87-1.05,2.54,2.54,0,0,0-1.41-.36,2.6,2.6,0,0,0-1.42.36,2.44,2.44,0,0,0-.88,1.07,6,6,0,0,0-.42,1.75c-.07.72-.11,1.51-.11,2.36a22.27,22.27,0,0,0,.1,2.37,5.79,5.79,0,0,0,.43,1.71,2.43,2.43,0,0,0,.84,1.08,2.55,2.55,0,0,0,1.46.37,2.63,2.63,0,0,0,1.41-.35A2.33,2.33,0,0,0,75,379Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M141.73,516.3a9.73,9.73,0,0,1-1.15,5.35,4.53,4.53,0,0,1-7.08,0,10,10,0,0,1-1.12-5.3,9.74,9.74,0,0,1,1.14-5.31,3.92,3.92,0,0,1,3.54-1.72A3.87,3.87,0,0,1,140.6,511,9.81,9.81,0,0,1,141.73,516.3Zm-2.39,4.12a5.93,5.93,0,0,0,.43-1.72,26.13,26.13,0,0,0,0-4.79,5.33,5.33,0,0,0-.44-1.72,2.29,2.29,0,0,0-.87-1.05,2.49,2.49,0,0,0-1.4-.36,2.6,2.6,0,0,0-1.42.36,2.37,2.37,0,0,0-.88,1.07,5.34,5.34,0,0,0-.42,1.75,21.38,21.38,0,0,0-.11,2.36,22.4,22.4,0,0,0,.1,2.37,5.65,5.65,0,0,0,.42,1.71,2.3,2.3,0,0,0,.85,1.07,2.53,2.53,0,0,0,1.46.38,2.57,2.57,0,0,0,1.41-.36A2.18,2.18,0,0,0,139.34,520.42Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M221.66,523.06h-7.31v-1.38h2.81v-9h-2.81V511.4a9,9,0,0,0,1.22-.09,3.22,3.22,0,0,0,1-.28,1.84,1.84,0,0,0,.65-.58,1.72,1.72,0,0,0,.28-.94h1.41v12.17h2.76Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M299.86,523.06h-9.14v-1.89l1.9-1.64c.64-.54,1.24-1.08,1.79-1.62a17.81,17.81,0,0,0,2.38-2.68,3.87,3.87,0,0,0,.65-2.14,2.07,2.07,0,0,0-.7-1.65,2.84,2.84,0,0,0-1.93-.6,6,6,0,0,0-1.79.3,7.11,7.11,0,0,0-1.88.88h-.09v-1.9a8.34,8.34,0,0,1,1.72-.58,8.55,8.55,0,0,1,2.08-.27,4.87,4.87,0,0,1,3.26,1,3.39,3.39,0,0,1,1.18,2.71,5.18,5.18,0,0,1-.2,1.45,5.09,5.09,0,0,1-.57,1.26,9.18,9.18,0,0,1-.84,1.1c-.31.37-.7.77-1.15,1.21-.65.63-1.32,1.25-2,1.85l-1.94,1.65h7.27Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M380.05,516.56a3.16,3.16,0,0,1,.72,1,3.65,3.65,0,0,1,.28,1.52,4.3,4.3,0,0,1-.34,1.7,4.06,4.06,0,0,1-.94,1.34,4.25,4.25,0,0,1-1.61.94,6.42,6.42,0,0,1-2,.3,9.1,9.1,0,0,1-2.21-.27,9.66,9.66,0,0,1-1.79-.58v-1.9h.14a7.41,7.41,0,0,0,1.81.85,6.7,6.7,0,0,0,2,.33,4.22,4.22,0,0,0,1.22-.19,2.41,2.41,0,0,0,1-.56,2.58,2.58,0,0,0,.62-.88,3.07,3.07,0,0,0,.21-1.22,2.6,2.6,0,0,0-.24-1.19,1.88,1.88,0,0,0-.63-.76,2.66,2.66,0,0,0-1-.38,7.11,7.11,0,0,0-1.25-.1h-.82V515h.63a3.8,3.8,0,0,0,2.2-.57,1.94,1.94,0,0,0,.82-1.69,1.67,1.67,0,0,0-.2-.85,1.78,1.78,0,0,0-.58-.61,2.78,2.78,0,0,0-.84-.33,5.89,5.89,0,0,0-1-.09,6.28,6.28,0,0,0-1.84.31,7.87,7.87,0,0,0-1.83.87h-.09v-1.89a8.43,8.43,0,0,1,1.71-.58,8.66,8.66,0,0,1,2.09-.28,7.47,7.47,0,0,1,1.74.19,4.14,4.14,0,0,1,1.36.58,2.91,2.91,0,0,1,1,1,3,3,0,0,1,.34,1.44,2.78,2.78,0,0,1-.8,2,3.42,3.42,0,0,1-1.87,1v.13a4.64,4.64,0,0,1,1,.31A3.29,3.29,0,0,1,380.05,516.56Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M464.55,519.26h-2v3.8H460.8v-3.8h-6.46v-2.09l6.54-7.61h1.67v8.25h2Zm-3.75-1.45v-6.1l-5.23,6.1Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M541.45,518.54a4.77,4.77,0,0,1-.35,1.8,4.09,4.09,0,0,1-.94,1.45,4.57,4.57,0,0,1-1.56,1,6,6,0,0,1-2.08.33,9.42,9.42,0,0,1-2.14-.24,8.41,8.41,0,0,1-1.73-.55v-1.91h.13a8.28,8.28,0,0,0,1.74.81,6.48,6.48,0,0,0,2,.32,4.28,4.28,0,0,0,1.24-.18,2.49,2.49,0,0,0,1.08-.64,2.34,2.34,0,0,0,.6-.93,3.47,3.47,0,0,0,.21-1.26,2.48,2.48,0,0,0-.25-1.18,1.9,1.9,0,0,0-.66-.77,2.86,2.86,0,0,0-1.15-.48A7,7,0,0,0,536,516a11.05,11.05,0,0,0-1.54.11l-1.27.22v-7h8.13v1.59H535v3.59l.8,0,.71,0a8.43,8.43,0,0,1,1.92.19,4.25,4.25,0,0,1,1.51.65,3.5,3.5,0,0,1,1.13,1.29A4.34,4.34,0,0,1,541.45,518.54Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M124.52,313.06V310.7h-7.39v2.36h2.46V324h2.47V313.06ZM134.37,324v-5.63c0-3.28-1.51-4.59-3.91-4.59a3.53,3.53,0,0,0-2.53.93v-4h-2.4V324h2.4v-5.06c0-2.19.73-2.95,2.1-2.95s1.95.83,1.95,2.92V324Zm6.49-7.9v-2.31h-.18a2.23,2.23,0,0,0-2.16,1.21v-1h-2.2v10h2.4v-5.54C138.72,316.91,139.42,316.13,140.86,316.1Zm10.85,3.06a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.15,10.44,4.91,4.91,0,0,0,4.75-3.18h-2.61a2.54,2.54,0,0,1-2.2,1,2.63,2.63,0,0,1-2.75-2h7.72A4,4,0,0,0,151.71,319.16ZM149.35,318h-5.52a2.65,2.65,0,0,1,2.77-2A2.54,2.54,0,0,1,149.35,318Zm10.49,2.86c0-1.47-.69-2.27-2.77-2.91-1.64-.53-1.69-.56-1.69-1.08a.86.86,0,0,1,.91-.85.89.89,0,0,1,.94.79h2.34a3.12,3.12,0,0,0-3.28-3,3.16,3.16,0,0,0-3.31,3c0,1.45.79,2.28,2.77,3,1.6.54,1.7.7,1.7,1.28a1,1,0,0,1-1.08,1c-.71,0-1.1-.36-1.34-1.21h-2.41a3.62,3.62,0,0,0,7.22,0ZM170,324v-5.63c0-3.28-1.51-4.59-3.91-4.59a3.55,3.55,0,0,0-2.54.93v-4h-2.39V324h2.39v-5.06c0-2.19.74-2.95,2.11-2.95s1.94.83,1.94,2.92V324Zm12.12-4.91a5.3,5.3,0,1,0-5.31,5.14A5.25,5.25,0,0,0,182.14,319.09Zm-2.41-.08a2.89,2.89,0,1,1-2.9-3A3,3,0,0,1,179.73,319Zm6.15,5V310.7h-2.39V324Zm12,0V310.7h-2.39v4.21a4.24,4.24,0,0,0-3.12-1.24,5.11,5.11,0,0,0-5,5.33,5,5,0,0,0,5,5.23,4.07,4.07,0,0,0,3.3-1.53V324Zm-2.21-5a3,3,0,0,1-2.9,3.08,3,3,0,0,1-3-3.15,3,3,0,0,1,2.92-3A3,3,0,0,1,195.66,319Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M235.91,274.25a6.4,6.4,0,0,0-6.28,1.33,9.49,9.49,0,0,0-2.13,4.31l-.78,2.94,12.86,3.41.79-3a9,9,0,0,0,.39-4.35A6.25,6.25,0,0,0,235.91,274.25Zm-.64,2.4a4.11,4.11,0,0,1,3.06,2.8,6.64,6.64,0,0,1-.26,3.28l-.14.53-8.3-2.21.13-.47a6.5,6.5,0,0,1,1.34-2.94A4.09,4.09,0,0,1,235.27,276.65Zm5.35-13.22a5.09,5.09,0,0,0-6.5,3.6,5.22,5.22,0,1,0,10.13,2.54,4.93,4.93,0,0,0-1.87-5.42l-.66,2.53a2.53,2.53,0,0,1,.39,2.37,2.62,2.62,0,0,1-2.6,2.16l2-7.46A3.62,3.62,0,0,0,240.62,263.43Zm-1.75,2-1.42,5.34a2.66,2.66,0,0,1-1.2-3.19A2.56,2.56,0,0,1,238.87,265.4Zm4.65-13.6a4.91,4.91,0,0,0-6.28,3.47,4.21,4.21,0,0,0,.51,3.53l-1.13-.3-.56,2.12L248.92,264l.61-2.31-4.12-1.1a4.24,4.24,0,0,0,1.91-2.65A5,5,0,0,0,243.52,251.8Zm-.56,2.34a2.89,2.89,0,1,1-3.68,2A2.9,2.9,0,0,1,243,254.14Zm3.64-13.54a5.3,5.3,0,1,0,3.62,6.45A5.24,5.24,0,0,0,246.6,240.6Zm-.68,2.31a2.89,2.89,0,1,1-3.67,2A3,3,0,0,1,245.92,242.91Zm6.39-4.66-12.85-3.41-.62,2.31,12.86,3.41Zm3.09-11.63-9.64-2.55-.56,2.12,1.28.34a3.72,3.72,0,0,0-2.35,2.75,5,5,0,0,0,3.78,6.25,4.93,4.93,0,0,0,6.3-3.52,4,4,0,0,0-.63-3.6l1.25.34Zm-5.33.94a2.92,2.92,0,1,1-1.49,5.65,2.93,2.93,0,1,1,1.49-5.65Zm-.69-9.07-2.23-.59,0,.17a2.24,2.24,0,0,0,.61,2.4l-.94-.25-.56,2.12,9.63,2.56.62-2.31-5.36-1.43C249.61,220.77,249.05,219.89,249.38,218.49ZM258,217l-9.64-2.55-.61,2.31,9.63,2.56Zm-11-2.94-2.31-.62-.62,2.32,2.32.61Zm13.31-5.67-2.07-.55L257,212.42l-4.37-5.7-2.07-.55-1.73,6.52,2.07.55,1-3.75,4.37,5.7,2.08.55Zm2.93-11-9.64-2.55L253,197l1.29.34a3.72,3.72,0,0,0-2.35,2.75,5,5,0,0,0,3.78,6.25,4.93,4.93,0,0,0,6.3-3.52,4,4,0,0,0-.63-3.6l1.25.34Zm-5.33.94a2.77,2.77,0,0,1,2.1,3.55,2.8,2.8,0,0,1-3.59,2.11,2.93,2.93,0,1,1,1.49-5.66Zm-.67-8.71-2.11-.56-.37,1.39-3.22-.85-.61,2.31,3.22.85-.3,1.13,2.1.56.3-1.13,7.54,2,.61-2.31-7.53-2Zm8.45-1.48L256,185.57l-.61,2.31,9.64,2.56Zm-11-2.95-2.32-.61-.61,2.31,2.31.62Zm9.37-10a5.3,5.3,0,1,0,3.62,6.46A5.25,5.25,0,0,0,264,175.17Zm-.68,2.32a2.89,2.89,0,1,1-3.67,2A2.94,2.94,0,0,1,263.28,177.49Zm8.05-10.92-5.17-1.37a5.56,5.56,0,0,0-3.49-.18,3.61,3.61,0,0,0-2.19,2.64,3.71,3.71,0,0,0,.43,3l-.92-.24-.57,2.14,9.64,2.55.61-2.31-4.54-1.2a4.38,4.38,0,0,1-2.21-1,2,2,0,0,1-.44-1.94c.31-1.15.95-1.72,3.52-1l4.72,1.25Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M162.87,397c0-1.8-.73-3-3.43-4a10.73,10.73,0,0,1-1.48-.59,1.4,1.4,0,0,1-.74-1.21,1.3,1.3,0,0,1,1.37-1.35,1.33,1.33,0,0,1,1.4,1.4h2.56a3.91,3.91,0,1,0-5,3.62,7.63,7.63,0,0,1,2.3,1,1.67,1.67,0,0,1,.62,1.35,1.64,1.64,0,0,1-1.8,1.62,1.61,1.61,0,0,1-1.8-1.66h-2.58a4.31,4.31,0,0,0,8.62-.23Zm5.82-3.76V391h-1.44V387.7h-2.39V391h-1.17v2.18h1.17V401h2.39v-7.79Zm3.6,7.79V391H169.9v10Zm0-11.41v-2.4h-2.4v2.4ZM189.18,401v-5.76c0-3-1.41-4.45-4-4.45a3.66,3.66,0,0,0-3.21,1.55,3.11,3.11,0,0,0-2.93-1.55,3,3,0,0,0-2.59,1.17V391h-2.2v10h2.39v-4.91c0-2.36.56-3.1,1.95-3.1s1.94.58,1.94,2.54V401h2.4v-4.91c0-2.38.68-3.1,2-3.1,1.12,0,1.87.54,1.87,2.54V401ZM200,401V391h-2.39v4.7a4.59,4.59,0,0,1-.38,2.39,2.05,2.05,0,0,1-1.82.92c-1.15,0-1.89-.49-1.89-3.13V391h-2.39v5.34c0,3.51,1.47,4.86,3.8,4.86a3.61,3.61,0,0,0,2.86-1.18V401Zm4.32,0V387.7h-2.4V401Zm10.8,0V391h-2.4v4.7a4.62,4.62,0,0,1-.37,2.39,2.05,2.05,0,0,1-1.82.92c-1.15,0-1.89-.49-1.89-3.13V391h-2.4v5.34c0,3.51,1.48,4.86,3.8,4.86a3.63,3.63,0,0,0,2.87-1.18V401Zm8.51-3.17c0-1.47-.69-2.27-2.78-2.91-1.63-.53-1.69-.56-1.69-1.08a.87.87,0,0,1,.92-.85.9.9,0,0,1,.94.79h2.34a3.31,3.31,0,0,0-6.59.06c0,1.45.79,2.28,2.77,3,1.6.54,1.69.7,1.69,1.28a1,1,0,0,1-1.08,1c-.7,0-1.1-.36-1.33-1.21h-2.41a3.62,3.62,0,0,0,7.22,0Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M350.31,176.06l4.39-4.22c.91,2.29,2.5,3.17,4.55,2.89a4.18,4.18,0,0,0,3.06-1.82c.61-1,.74-1.94.49-3.74l-.51-3.8-13.18,1.77.33,2.45,5.05-.68-4.59,4.14Zm8.53-3.78c-1.39.19-2.1-.53-2.36-2.42l-.16-1.2,4-.53.15,1.09C360.74,171.54,360,172.12,358.84,172.28Zm-2.25,14.2a5.1,5.1,0,0,0,4.63-5.82,5.22,5.22,0,1,0-10.33,1.54,4.91,4.91,0,0,0,3.8,4.28l-.35-2.59a2.51,2.51,0,0,1-1.27-2,2.62,2.62,0,0,1,1.57-3l1,7.65A3.55,3.55,0,0,0,356.59,186.48Zm.87-2.5-.74-5.47a2.65,2.65,0,0,1,2.33,2.48A2.54,2.54,0,0,1,357.46,184Zm.91,14.35a4.9,4.9,0,0,0,4.47-5.61,4.2,4.2,0,0,0-1.82-3.06l1.15-.16-.29-2.18L348.7,189.1l.32,2.37,4.22-.57a4.3,4.3,0,0,0-.75,3.19A5,5,0,0,0,358.37,198.33ZM358,196a2.88,2.88,0,0,1-3.35-2.4A3,3,0,1,1,358,196Zm1.81,13.9a5.3,5.3,0,1,0-5.8-4.57A5.23,5.23,0,0,0,359.8,209.85Zm-.25-2.4a2.89,2.89,0,1,1,2.62-3.27A3,3,0,0,1,359.55,207.45Zm-4.12,6.76,13.18-1.77-.31-2.37-13.19,1.77Zm1.6,11.92,9.89-1.32-.3-2.18-1.32.18a3.71,3.71,0,0,0,1.12-3.44,5,5,0,0,0-5.88-4.33,4.93,4.93,0,0,0-4.47,5.67,4.05,4.05,0,0,0,1.95,3.08l-1.28.17Zm4.57-2.9a2.92,2.92,0,1,1-.8-5.79,2.93,2.93,0,1,1,.8,5.79Zm4.11,8.12L368,231l0-.18a2.23,2.23,0,0,0-1.49-2l1-.13-.3-2.18-9.88,1.33.32,2.37,5.49-.73C364.62,229.33,365.48,229.92,365.71,231.35ZM358.36,236l9.88-1.33-.32-2.37L358,233.62Zm11.31-1.5,2.37-.32-.32-2.37-2.37.32Zm-10.13,10.33,2.13-.28-.63-4.69,6.22,3.59,2.12-.28-.9-6.69-2.12.28.52,3.86-6.23-3.6-2.12.29Zm1.52,11.3,9.88-1.33-.29-2.18-1.32.18a3.71,3.71,0,0,0,1.12-3.44,5,5,0,0,0-5.89-4.33,4.93,4.93,0,0,0-4.46,5.67,4,4,0,0,0,1.95,3.08l-1.28.17Zm4.57-2.91a2.92,2.92,0,1,1-.8-5.79,2.93,2.93,0,1,1,.8,5.79Zm3.95,7.8,2.16-.3-.19-1.42,3.3-.45-.32-2.37-3.3.45-.16-1.16-2.15.29.15,1.15-7.72,1,.31,2.37,7.73-1Zm-7.25,4.6,9.89-1.33-.32-2.37L362,263.23Zm11.32-1.5,2.37-.32-.32-2.38-2.37.32ZM368.82,277a5.3,5.3,0,1,0-5.81-4.58A5.25,5.25,0,0,0,368.82,277Zm-.25-2.4a2.9,2.9,0,1,1,2.61-3.28A3,3,0,0,1,368.57,274.55Zm-3.27,13.16,5.3-.71c1.77-.24,2.6-.53,3.3-1.17a3.62,3.62,0,0,0,1-3.28,3.74,3.74,0,0,0-1.55-2.63l.94-.12-.29-2.2-9.89,1.33.32,2.37,4.66-.62a4.24,4.24,0,0,1,2.42.07,2,2,0,0,1,1.15,1.63c.16,1.17-.21,1.95-2.85,2.31l-4.84.64Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M470.22,363l-3.6-4.91c2.4-.6,3.48-2.06,3.48-4.13a4.13,4.13,0,0,0-1.41-3.27c-.86-.74-1.81-1-3.63-1h-3.84V363h2.47v-5.09l3.49,5.09Zm-2.61-9c0,1.4-.81,2-2.71,2h-1.21v-4h1.1C467.13,352.06,467.61,352.85,467.61,354Zm13.78,4.12a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.14,10.44,4.89,4.89,0,0,0,4.75-3.18h-2.61a2.52,2.52,0,0,1-2.19,1,2.63,2.63,0,0,1-2.76-2h7.73A4,4,0,0,0,481.39,358.16ZM479,357H473.5a2.66,2.66,0,0,1,2.77-2A2.55,2.55,0,0,1,479,357Zm10.49,2.86c0-1.47-.69-2.27-2.78-2.91-1.63-.53-1.69-.56-1.69-1.08A.87.87,0,0,1,486,355a.88.88,0,0,1,.93.79h2.34a3.3,3.3,0,0,0-6.58.06c0,1.45.79,2.28,2.77,3,1.6.54,1.69.7,1.69,1.28a1,1,0,0,1-1.08,1c-.7,0-1.1-.36-1.33-1.21H482.3a3.62,3.62,0,0,0,7.22,0Zm5.71-4.62V353h-1.44V349.7h-2.4V353h-1.17v2.18h1.17V363h2.4v-7.79Zm3.59,7.79V353h-2.39v10Zm0-11.41v-2.4h-2.39v2.4ZM509.61,363v-5.35c0-1.78-.18-2.64-.72-3.42a3.61,3.61,0,0,0-3.12-1.44A3.74,3.74,0,0,0,503,354v-1h-2.21v10h2.39v-4.7a4.22,4.22,0,0,1,.4-2.39,2,2,0,0,1,1.76-.92c1.19,0,1.91.47,1.91,3.13V363Zm12-1.89V353h-2.29v1.26a3.74,3.74,0,0,0-3.25-1.5,4.91,4.91,0,0,0-4.92,5.15c0,3.08,2,5.29,4.9,5.29a3.89,3.89,0,0,0,3.27-1.54c-.09,2.14-1,3.18-2.79,3.18a3,3,0,0,1-2.5-1.06h-2.72A5.21,5.21,0,0,0,516.4,367C519.5,367,521.57,365.39,521.57,361.11Zm-2.39-3.06a2.76,2.76,0,0,1-2.85,3,2.72,2.72,0,0,1-2.81-3A2.76,2.76,0,0,1,516.3,355,2.83,2.83,0,0,1,519.18,358.05Zm15.88,1.78c0-1.47-.68-2.27-2.77-2.91-1.64-.53-1.69-.56-1.69-1.08a.86.86,0,0,1,.91-.85.89.89,0,0,1,.94.79h2.34a3.12,3.12,0,0,0-3.28-3,3.16,3.16,0,0,0-3.31,3c0,1.45.79,2.28,2.77,3,1.61.54,1.7.7,1.7,1.28a1,1,0,0,1-1.08,1c-.71,0-1.1-.36-1.34-1.21h-2.41a3.62,3.62,0,0,0,7.22,0Zm5.71-4.62V353h-1.44V349.7h-2.39V353h-1.17v2.18h1.17V363h2.39v-7.79ZM551.89,363V353H549.7v1.33a3.71,3.71,0,0,0-3.26-1.57,5,5,0,0,0-5.08,5.26,4.93,4.93,0,0,0,5,5.18,4,4,0,0,0,3.31-1.53V363Zm-2.26-4.91a2.93,2.93,0,1,1-5.85,0,2.93,2.93,0,1,1,5.85,0Zm8.24-2.88V353h-1.44V349.7H554V353h-1.17v2.18H554V363h2.39v-7.79Zm11,3a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.15,10.44,4.91,4.91,0,0,0,4.75-3.18H566a2.54,2.54,0,0,1-2.2,1,2.63,2.63,0,0,1-2.75-2h7.72A4,4,0,0,0,568.87,358.16ZM566.51,357H561a2.66,2.66,0,0,1,2.77-2A2.54,2.54,0,0,1,566.51,357Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M367.05,493V479.7h-2.47v5.36h-4.75V479.7h-2.47V493h2.47v-5.58h4.75V493Zm11.55-10h-2.76l-2.41,6.46L371.22,483h-2.74l3.66,9-1.88,4.27h2.58Zm11.63,5a4.92,4.92,0,0,0-5-5.19A4.23,4.23,0,0,0,382,484.2V483h-2.19v13.3h2.39v-4.27a4.27,4.27,0,0,0,3.06,1.17A5,5,0,0,0,390.23,488Zm-2.41,0a2.89,2.89,0,1,1-2.87-3A2.9,2.9,0,0,1,387.82,488Zm13.82.13a5.11,5.11,0,0,0-5.15-5.37,5.22,5.22,0,1,0,.15,10.44,4.91,4.91,0,0,0,4.75-3.18h-2.61a2.54,2.54,0,0,1-2.2,1,2.63,2.63,0,0,1-2.75-2h7.72A4,4,0,0,0,401.64,488.16ZM399.28,487h-5.52a2.66,2.66,0,0,1,2.77-2A2.54,2.54,0,0,1,399.28,487Zm8.44-1.87v-2.31h-.18a2.23,2.23,0,0,0-2.16,1.21v-1h-2.2v10h2.4v-5.54C405.58,485.91,406.28,485.13,407.72,485.1ZM419.39,488a4.92,4.92,0,0,0-5-5.19,4.2,4.2,0,0,0-3.27,1.41V483H409v13.3h2.39v-4.27a4.27,4.27,0,0,0,3.06,1.17A5,5,0,0,0,419.39,488ZM417,488a2.89,2.89,0,0,1-2.83,3,3,3,0,1,1,2.83-3Zm14,.06a5.3,5.3,0,1,0-5.31,5.14A5.25,5.25,0,0,0,431,488.09Zm-2.41-.08a2.89,2.89,0,1,1-2.9-3A3,3,0,0,1,428.59,488Zm6.15,5V479.7h-2.39V493Zm12,0V483h-2.2v1.33a3.71,3.71,0,0,0-3.26-1.57,5,5,0,0,0-5.07,5.26,4.92,4.92,0,0,0,5,5.18,4,4,0,0,0,3.31-1.53V493Zm-2.27-4.91a2.93,2.93,0,1,1-5.85,0,2.93,2.93,0,1,1,5.85,0Zm8.59-3v-2.31h-.18a2.23,2.23,0,0,0-2.16,1.21v-1h-2.2v10H451v-5.54C451,485.91,451.65,485.13,453.09,485.1Zm3.62,7.9V483h-2.39v10Zm0-11.41v-2.4h-2.39v2.4Zm8.9,11.41v-2.14h-4.74l4.4-5.69V483h-6.75v2.14h3.88L458,490.86V493ZM477,493V483h-2.2v1.33a3.68,3.68,0,0,0-3.25-1.57,5,5,0,0,0-5.08,5.26,4.93,4.93,0,0,0,5,5.18,4,4,0,0,0,3.31-1.53V493Zm-2.27-4.91a2.93,2.93,0,1,1-5.85,0,2.93,2.93,0,1,1,5.85,0Zm8.25-2.88V483h-1.44V479.7h-2.39V483H478v2.18h1.18V493h2.39v-7.79Zm3.6,7.79V483h-2.4v10Zm0-11.41v-2.4h-2.39v2.4Zm12.09,6.5a5.31,5.31,0,1,0-5.31,5.14A5.25,5.25,0,0,0,498.7,488.09Zm-2.42-.08a2.89,2.89,0,1,1-2.89-3A3,3,0,0,1,496.28,488Zm12.61,5v-5.35c0-1.78-.18-2.64-.72-3.42a3.58,3.58,0,0,0-3.11-1.44,3.74,3.74,0,0,0-2.81,1.19v-1H500v10h2.39v-4.7a4.22,4.22,0,0,1,.4-2.39,2,2,0,0,1,1.76-.92c1.19,0,1.91.47,1.91,3.13V493Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M301.46,388.46h-6.62v3.69h5.69v1.55h-5.69V400H293.1V386.91h8.36ZM311,400h-1.64V399c-.15.1-.35.24-.6.43a4.48,4.48,0,0,1-.72.42,5,5,0,0,1-.95.33,4.63,4.63,0,0,1-1.25.14,3.11,3.11,0,0,1-2.25-.88,2.93,2.93,0,0,1-.93-2.24,3.09,3.09,0,0,1,.48-1.8,3.2,3.2,0,0,1,1.37-1.09,7.36,7.36,0,0,1,2.15-.53c.84-.1,1.74-.17,2.7-.22v-.25a1.94,1.94,0,0,0-.2-.93,1.42,1.42,0,0,0-.56-.58,2.18,2.18,0,0,0-.85-.27,6.83,6.83,0,0,0-1-.08,6.74,6.74,0,0,0-1.45.18,11.7,11.7,0,0,0-1.65.49h-.09v-1.68c.33-.08.79-.18,1.4-.29a11.11,11.11,0,0,1,1.8-.15,7.92,7.92,0,0,1,1.8.17,3.48,3.48,0,0,1,1.34.58,2.55,2.55,0,0,1,.84,1.05,3.71,3.71,0,0,1,.29,1.59Zm-1.64-2.42v-2.73c-.5,0-1.1.07-1.78.13a8.55,8.55,0,0,0-1.62.26,2.51,2.51,0,0,0-1.15.63,1.52,1.52,0,0,0-.44,1.17,1.57,1.57,0,0,0,.51,1.27,2.41,2.41,0,0,0,1.55.42,3.85,3.85,0,0,0,1.6-.33A7.55,7.55,0,0,0,309.31,397.58Zm6.6-9h-1.86v-1.71h1.86Zm-.1,11.46h-1.66v-9.82h1.66Zm4.93,0h-1.65V386.32h1.65Zm11.49-4.74H325a4.31,4.31,0,0,0,.27,1.59,2.87,2.87,0,0,0,.75,1.09,2.8,2.8,0,0,0,1.08.64,4.36,4.36,0,0,0,1.39.21,5.54,5.54,0,0,0,2-.4,5,5,0,0,0,1.45-.79H332v1.8a13.29,13.29,0,0,1-1.71.59,6.83,6.83,0,0,1-1.82.24,5.29,5.29,0,0,1-3.82-1.32,5,5,0,0,1-1.37-3.76,5.4,5.4,0,0,1,1.31-3.82,4.49,4.49,0,0,1,3.46-1.42,4,4,0,0,1,3.06,1.16,4.65,4.65,0,0,1,1.08,3.3ZM330.62,394a2.87,2.87,0,0,0-.66-2,2.5,2.5,0,0,0-1.95-.71,2.87,2.87,0,0,0-2.12.78A3,3,0,0,0,325,394Zm12.08,6h-1.65v-1a6.08,6.08,0,0,1-1.49,1,4,4,0,0,1-1.68.34,3.33,3.33,0,0,1-2.79-1.35,6,6,0,0,1-1-3.75,6.65,6.65,0,0,1,.35-2.23,5.3,5.3,0,0,1,1-1.66,4.2,4.2,0,0,1,1.39-1,4.11,4.11,0,0,1,1.65-.35,5.13,5.13,0,0,1,1.37.17,5.78,5.78,0,0,1,1.26.5v-4.26h1.65Zm-1.65-2.42V392a5.89,5.89,0,0,0-1.2-.41,5.14,5.14,0,0,0-1.15-.12,2.58,2.58,0,0,0-2.16,1,4.26,4.26,0,0,0-.77,2.74,4.86,4.86,0,0,0,.59,2.66,2.12,2.12,0,0,0,1.92.91,3.5,3.5,0,0,0,1.42-.31A6.2,6.2,0,0,0,341.05,397.58Zm-60.59,13H278.6v-1.71h1.86Zm-.1,11.46h-1.65v-9.82h1.65Zm11.48,0h-1.65v-5.59a10.18,10.18,0,0,0-.08-1.27,2.55,2.55,0,0,0-.29-.93,1.36,1.36,0,0,0-.64-.54,2.66,2.66,0,0,0-1.07-.19,3.46,3.46,0,0,0-1.41.34,6.68,6.68,0,0,0-1.42.85V422h-1.65v-9.82h1.65v1.09a7.07,7.07,0,0,1,1.6-1,4.22,4.22,0,0,1,1.7-.36,3,3,0,0,1,2.42,1,4.07,4.07,0,0,1,.84,2.76Zm5-11.46h-1.87v-1.71h1.87ZM296.69,422H295v-9.82h1.65Zm8.37-.09a8.78,8.78,0,0,1-1,.2,6,6,0,0,1-1,.08,3.06,3.06,0,0,1-2.28-.8,3.66,3.66,0,0,1-.79-2.6v-5.22h-1.11v-1.39H300v-2.82h1.66v2.82h3.41v1.39h-3.41v4.48c0,.51,0,.91,0,1.21a2,2,0,0,0,.25.81,1.22,1.22,0,0,0,.52.51,2.54,2.54,0,0,0,1,.16,3.74,3.74,0,0,0,.85-.11c.29-.08.5-.15.63-.2h.09Zm3.78-11.37H307v-1.71h1.87ZM308.73,422h-1.65v-9.82h1.65Zm10.9,0H318V421l-.59.43a5.55,5.55,0,0,1-.72.42,5.27,5.27,0,0,1-.95.33,4.76,4.76,0,0,1-1.26.14,3.14,3.14,0,0,1-2.25-.88,3,3,0,0,1-.92-2.24,3.16,3.16,0,0,1,.47-1.8,3.2,3.2,0,0,1,1.37-1.09,7.43,7.43,0,0,1,2.16-.53c.83-.1,1.73-.17,2.69-.22v-.25a1.83,1.83,0,0,0-.2-.93,1.36,1.36,0,0,0-.56-.58,2.13,2.13,0,0,0-.84-.27,6.83,6.83,0,0,0-1-.08,6.66,6.66,0,0,0-1.45.18,11,11,0,0,0-1.65.49h-.09v-1.68c.32-.08.79-.18,1.4-.29a11.11,11.11,0,0,1,1.8-.15,8,8,0,0,1,1.8.17,3.5,3.5,0,0,1,1.33.58,2.57,2.57,0,0,1,.85,1.05,3.86,3.86,0,0,1,.29,1.59ZM318,419.58v-2.73l-1.78.13a8.55,8.55,0,0,0-1.62.26,2.62,2.62,0,0,0-1.15.63A1.55,1.55,0,0,0,313,419a1.57,1.57,0,0,0,.51,1.27,2.42,2.42,0,0,0,1.56.42,3.77,3.77,0,0,0,1.59-.33A6.88,6.88,0,0,0,318,419.58Zm9.93,2.33a8.78,8.78,0,0,1-1,.2,6,6,0,0,1-1,.08,3.06,3.06,0,0,1-2.28-.8,3.66,3.66,0,0,1-.78-2.6v-5.22h-1.12v-1.39h1.12v-2.82h1.65v2.82h3.41v1.39H324.5v4.48c0,.51,0,.91,0,1.21a2.12,2.12,0,0,0,.25.81,1.19,1.19,0,0,0,.53.51,2.49,2.49,0,0,0,1,.16,3.74,3.74,0,0,0,.85-.11c.29-.08.5-.15.63-.2h.09Zm3.78-11.37h-1.87v-1.71h1.87ZM331.58,422h-1.65v-9.82h1.65Zm11.64-4.9a5.48,5.48,0,0,1-1.23,3.78,4.62,4.62,0,0,1-6.61,0,6.48,6.48,0,0,1,0-7.57,4.6,4.6,0,0,1,6.61,0A5.5,5.5,0,0,1,343.22,417.1Zm-1.71,0a4.41,4.41,0,0,0-.74-2.83,2.78,2.78,0,0,0-4.17,0,5.69,5.69,0,0,0,0,5.63,2.75,2.75,0,0,0,4.15,0A4.48,4.48,0,0,0,341.51,417.1ZM354,422h-1.65v-5.59a8.57,8.57,0,0,0-.08-1.27,2.37,2.37,0,0,0-.29-.93,1.34,1.34,0,0,0-.63-.54,2.7,2.7,0,0,0-1.07-.19,3.54,3.54,0,0,0-1.42.34,6.87,6.87,0,0,0-1.41.85V422h-1.65v-9.82h1.65v1.09a6.85,6.85,0,0,1,1.6-1,4.17,4.17,0,0,1,1.69-.36,3.06,3.06,0,0,1,2.43,1,4.06,4.06,0,0,1,.83,2.76Zm10.2-2.83a2.67,2.67,0,0,1-1.12,2.21,4.85,4.85,0,0,1-3,.86,7.39,7.39,0,0,1-2-.26,8.13,8.13,0,0,1-1.52-.57v-1.85h.08a7.18,7.18,0,0,0,1.75.94,5.36,5.36,0,0,0,1.83.34,3.52,3.52,0,0,0,1.71-.35,1.18,1.18,0,0,0,.61-1.11,1.12,1.12,0,0,0-.33-.88,3,3,0,0,0-1.28-.51l-.93-.18c-.37-.07-.72-.15-1-.23a3.45,3.45,0,0,1-1.83-1,2.53,2.53,0,0,1-.54-1.64,2.63,2.63,0,0,1,.25-1.14,2.76,2.76,0,0,1,.76-1,3.78,3.78,0,0,1,1.25-.65,5.68,5.68,0,0,1,1.7-.24,7.29,7.29,0,0,1,1.78.22,6.88,6.88,0,0,1,1.5.51v1.77h-.09a5.77,5.77,0,0,0-1.53-.78,5.22,5.22,0,0,0-1.78-.33,3.15,3.15,0,0,0-1.53.35,1.12,1.12,0,0,0-.62,1,1.1,1.1,0,0,0,.38.92,3,3,0,0,0,1.19.5l1,.21,1,.19a3.54,3.54,0,0,1,1.78.91A2.39,2.39,0,0,1,364.19,419.17Z" transform="translate(-12.26 -22.38)"/><g id="Button1"><circle class="cls-1" cx="177.24" cy="407.12" r="22.5"/><path class="cls-2" d="M191.1,441V423.26h-5.43v3h2.23V441Z" transform="translate(-12.26 -22.38)"/></g><g id="Button3"><circle class="cls-1" cx="398.24" cy="191.12" r="22.5"/><path class="cls-2" d="M416.43,215.36a4.57,4.57,0,0,0-2.76-4.58,3.43,3.43,0,0,0,1.49-3.05,4.66,4.66,0,0,0-4.78-4.78,4.53,4.53,0,0,0-4.7,4.54h3.24c.14-1.11.62-1.61,1.49-1.61a1.56,1.56,0,0,1,1.56,1.68c0,1.22-.72,1.78-2.74,1.82v3.08h.53c2.11,0,3.48,1.17,3.48,3a2.78,2.78,0,0,1-2.78,2.95,2.88,2.88,0,0,1-2.88-2.76h-3.22a5.89,5.89,0,0,0,6.12,5.69A5.78,5.78,0,0,0,416.43,215.36Z" transform="translate(-12.26 -22.38)"/></g><g id="Button2"><circle class="cls-1" cx="190.24" cy="191.12" r="22.5"/><path class="cls-2" d="M208.48,208.71A5.67,5.67,0,0,0,202.7,203c-3.41,0-5.88,2.35-5.88,6.43H200c0-2.11,1.1-3.5,2.76-3.5a2.63,2.63,0,0,1,2.57,2.78c0,1.16-.6,2.19-2,3.56l-6.31,6V221h11.47v-3h-7l3.63-3.29C207.74,212.29,208.48,210.9,208.48,208.71Z" transform="translate(-12.26 -22.38)"/></g><g id="Button4"><circle class="cls-1" cx="316.24" cy="454.12" r="22.5"/><path class="cls-2" d="M332.72,482.34v-2.86h-1.87V467.26h-2.69L320,479.74v2.6h7.66V485h3.19v-2.66Zm-5.06-2.86h-4.42l4.42-6.84Z" transform="translate(-12.26 -22.38)"/></g><path class="cls-9" d="M297,578.41v-3.15h-9.86v3.15h3.29V593h3.28V578.41ZM301.57,593V579.7h-3.2V593Zm0-15.22v-3.19H298.4v3.19ZM324.08,593v-7.68c0-4-1.87-5.93-5.37-5.93a4.88,4.88,0,0,0-4.27,2.07,4.17,4.17,0,0,0-3.92-2.07,4,4,0,0,0-3.45,1.56V579.7h-2.93V593h3.19v-6.55c0-3.15.75-4.13,2.59-4.13,1.68,0,2.6.77,2.6,3.38V593h3.19v-6.55c0-3.17.91-4.13,2.69-4.13,1.48,0,2.49.72,2.49,3.38V593ZM340,586.54a6.81,6.81,0,0,0-6.87-7.15,7,7,0,1,0,.19,13.92,6.54,6.54,0,0,0,6.34-4.25h-3.48a3.39,3.39,0,0,1-2.93,1.32,3.5,3.5,0,0,1-3.67-2.61h10.3A5.58,5.58,0,0,0,340,586.54ZM336.86,585h-7.37a3.55,3.55,0,0,1,3.7-2.64A3.4,3.4,0,0,1,336.86,585Zm19,11.33v-3.48c-2-1.27-3.36-4.2-3.36-7a8.65,8.65,0,0,1,3.36-7.08v-3.46a11.16,11.16,0,0,0-6.6,10.54C349.27,590.26,351.91,594.9,355.87,596.29Zm22-3.29v-7.68c0-4-1.87-5.93-5.38-5.93a4.88,4.88,0,0,0-4.27,2.07,4.16,4.16,0,0,0-3.91-2.07,4,4,0,0,0-3.46,1.56V579.7H357.9V593h3.2v-6.55c0-3.15.74-4.13,2.59-4.13,1.68,0,2.59.77,2.59,3.38V593h3.19v-6.55c0-3.17.92-4.13,2.69-4.13,1.49,0,2.5.72,2.5,3.38V593Zm11.41-4.22c0-2-.91-3-3.7-3.89-2.18-.7-2.25-.75-2.25-1.44a1.15,1.15,0,0,1,1.22-1.13,1.19,1.19,0,0,1,1.25,1.06h3.12a4.41,4.41,0,0,0-8.78.07c0,1.94,1.05,3,3.69,3.93,2.14.72,2.26.94,2.26,1.71a1.34,1.34,0,0,1-1.44,1.29c-.94,0-1.47-.48-1.78-1.6h-3.21c.33,3.09,2.23,4.53,4.87,4.53A4.6,4.6,0,0,0,389.26,588.78Zm8-3c0-4.44-2.64-9.09-6.6-10.49v3.48c2,1.28,3.36,4.2,3.36,7a8.67,8.67,0,0,1-3.36,7.08v3.46A11.17,11.17,0,0,0,397.24,585.75Z" transform="translate(-12.26 -22.38)"/><path class="cls-9" d="M12.26,323.34v3.46l13.49,4.78-13.49,4.77v3.46L30,332.9v-2.69Zm11.19-13.57a7.07,7.07,0,1,0,6.86,7.08A7,7,0,0,0,23.45,309.77Zm-.1,3.21a3.86,3.86,0,1,1-4,3.87A3.94,3.94,0,0,1,23.35,313ZM30,304.79H12.26V308H30Zm-10.39-8.17H16.7v1.92H12.26v3.19H16.7v1.56h2.91v-1.56H30v-3.19H19.61ZM30,281.79H16.7v2.92h1.78a5,5,0,0,0-2.09,4.35,6.66,6.66,0,0,0,7,6.77,6.58,6.58,0,0,0,6.91-6.7,5.37,5.37,0,0,0-2-4.42H30Zm-6.55,3a3.9,3.9,0,1,1,0,7.8,3.91,3.91,0,1,1,0-7.8Zm4-18.77H16.7v3h1.68a5,5,0,0,0-2,4.34A6.53,6.53,0,0,0,23.26,280c4.1,0,7-2.73,7-6.53a5.17,5.17,0,0,0-2.06-4.36c2.85.12,4.25,1.34,4.25,3.72a4,4,0,0,1-1.42,3.33v3.63c2.66-1.08,4.22-3.58,4.22-6.84C35.3,268.8,33.19,266,27.48,266Zm-4.08,3.19a3.66,3.66,0,0,1,4,3.79c0,2.28-1.56,3.75-4,3.75s-4.08-1.47-4.08-3.7A3.77,3.77,0,0,1,23.4,269.23Zm.14-19a6.8,6.8,0,0,0-7.15,6.86,7,7,0,1,0,13.92-.19,6.54,6.54,0,0,0-4.25-6.34v3.48A3.39,3.39,0,0,1,27.38,257a3.49,3.49,0,0,1-2.61,3.67V250.39A5,5,0,0,0,23.54,250.27ZM22,253.41v7.37a3.55,3.55,0,0,1-2.64-3.7A3.41,3.41,0,0,1,22,253.41Zm11.33-19H29.81c-1.27,2-4.2,3.36-7,3.36a8.65,8.65,0,0,1-7.08-3.36H12.26A11.17,11.17,0,0,0,22.8,241C27.26,241,31.9,238.37,33.29,234.4Zm-3.29-22H22.32c-4,0-5.93,1.88-5.93,5.38a4.88,4.88,0,0,0,2.07,4.27A4.16,4.16,0,0,0,16.39,226,4,4,0,0,0,18,229.44H16.7v2.93H30v-3.19H23.45c-3.15,0-4.13-.75-4.13-2.6,0-1.68.77-2.59,3.38-2.59H30V220.8H23.45c-3.17,0-4.13-.91-4.13-2.69,0-1.49.72-2.49,3.38-2.49H30Zm-17.74-18v3.45l13.49,4.78-13.49,4.78v3.45L30,204V201.3Zm10.49-7.64c-4.44,0-9.09,2.64-10.49,6.6h3.48c1.28-2,4.2-3.36,7-3.36a8.67,8.67,0,0,1,7.08,3.36h3.46A11.17,11.17,0,0,0,22.75,186.8Z" transform="translate(-12.26 -22.38)"/></svg>  
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-            
-    <script>
-    jQuery(function() {
-
-        //animation to delay the page main area by 1 second
-        //start with 0 opacity
-        gsap.set($(".mainPageArea2"), {css: {opacity:0}})
-        //end with 1 opacity
-        gsap.to($(".mainPageArea2"), {css: {opacity:1},
-                                            duration: 1,
-                                            delay: 0.5});
-
-        gsap.set($(".mainPageArea3"), {css: {opacity:0}})
-        //end with 1 opacity
-        gsap.to($(".mainPageArea3"), {css: {opacity:1},
-                                            duration: 1,
-                                            delay: 1.5});
-
-        //animation for mouseover for nav bar headings
-        //mouseenter increases the size and changes the color of the text                                   
-        $(".navText").on("mouseenter", function() {
-            gsap.to($(this), {css: {color: "white"},
-                                    duration: 0.25});
-        });
-
-        //mouseleave returns the text to its original size and color
-        $(".navText").on("mouseleave",function() {
-            gsap.to($(this), {css: {color:"black"},
-                                    duration: 0.25});
-        });
-
-        gsap.set($("#Button1 .cardLink"), {css: {opacity:0}})
-        $("#stimulusButton").on("click",function(){
-            gsap.to($("#Button1"), {css:{opacity:1}})
-        })
-
-        gsap.set($("#Button2"), {css: {opacity:0}})
-        $("#depolarizationButton").on("click",function(){
-            gsap.to($("#Button2"), {css:{opacity:1}})
-        })
-
-        gsap.set($("#Button3"), {css: {opacity:0}})
-        $("#repolarizationButton").on("click",function(){
-            gsap.to($("#Button3"), {css:{opacity:1}})
-        })
-
-        gsap.set($("#Button4"), {css: {opacity:0}})
-        $("#hyperpolarizationButton").on("click",function(){
-            gsap.to($("#Button4"), {css:{opacity:1}})
-        })
-
-        gsap.set($("#Button5"), {css: {opacity:0}})
-        $("#restingStateButton").on("click",function(){
-            gsap.to($("#Button5"), {css:{opacity:1}})
-        })
-
-        //mouseenter for title and changes the color of the text                                   
-        $(".title").on("mouseenter", function() {
-            gsap.to($(this), {css: {color: "white"},
-                                    duration: 0.25});
-        });
-
-        //mouseenter for titleAP and changes the color of the text                                   
-        $(".titleAP").on("mouseenter", function() {
-            gsap.to($(this), {css: {color: "white"},
-                                    duration: 0.25});
-        });
-
-
-        //mouseenter for graphAP and changes the color of the text                                   
-        $(".graphAP").on("mouseenter", function() {
-            gsap.to($(this), {css: {color: "white"},
-                                    duration: 0.25});
-        });
-
-        //mouseenter for definition and changes the color of the text                                   
-        $(".definition").on("mouseenter", function() {
-            gsap.to($(this), {css: {color: "white"},
-                                    duration: 0.25});
-        });
-
-        //mouseenter for definition and changes the color of the text                                   
-        $(".definition").on("mouseleave", function() {
-            gsap.to($(this), {css: {color: "#555353"},
-                                    duration: 0.25});
-        });
-
-        
-    })
-    </script>
-</body>
+        </div>        
+        <script src="actionPotential.js"></script>
+    </body>
 </html>

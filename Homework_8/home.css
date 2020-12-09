@@ -1,6 +1,9 @@
+/* set the background color to pink shade */
 body{
     background-color:  #DFC4BA;
 }
+
+/* set welcome text to certain color height and more */
 .welcome{
     font-family: TeX Gyre Adventor;
     font-style: normal;
@@ -11,11 +14,14 @@ body{
     text-align: center;
 }
 
+/* setting the home logo to a certain min with with padding and alignment */
 .homeLogo{
     padding-top: 5%;
     min-width: 200px;
+    align-items: center;
 }
 
+/* styling the description */
 .landingDescription{
     font-family: TeX Gyre Adventor;
     font-style: normal;
@@ -26,7 +32,7 @@ body{
     text-align: center;
 }
 
-
+/* link the tool word to the neuron page and removing the hyperlink styling */
 .landingDescription a{
     text-decoration: none !important;
     color: #555353;

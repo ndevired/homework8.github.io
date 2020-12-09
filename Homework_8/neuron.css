@@ -4,11 +4,10 @@
     padding: 5%;
 }
 
-/* creation on information box: to add the itle and the description */
+/* creation of information box: to add the title and the description */
 .information{
 min-width: 350px;
 min-height: 500px;
-/* background-color: #F5F5F5; */
 margin-top: 10px;
 }
 
@@ -39,6 +38,7 @@ margin-top: 10px;
     color:#353333; 
 }
 
+/* setting the min width of the neuron to 400px */
 .entireNeuron{
     min-width:400px;
 }

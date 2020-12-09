@@ -88,15 +88,7 @@
     font-size: 22px;
     padding:10px;
     color: #555353;
-    /* align: center; */
 }
-
-/* sizing action potential graph */
-/* #actionPotentialGraph{
-    width:80%;
-    height:80%;
-} */
-
 
 /* Styling of the text for title */
 .title{
@@ -119,11 +111,13 @@
     padding-bottom: 3%; 
 }
 
+/* setting the graph width to a certain min and max width */
 .graph{
     min-width:400px;
     max-width: 80%;
 }
 
+/* setting the entire table region to a certain max width */
 .explain_table{
     min-width:400px;
 }

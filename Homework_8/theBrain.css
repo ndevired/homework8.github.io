@@ -68,14 +68,17 @@
     color:#353333; 
 }
 
+/* setting the min width for diagram 1 */
 .sideSection{
     min-width: 400px;
 }
 
+/* setting the min width for diagram 2 */
 .crossSection{
     min-width: 400px;
 }
 
+/* setting the main page area to 5% */
 .mainPageArea4{
     padding-top: 5%;
 }

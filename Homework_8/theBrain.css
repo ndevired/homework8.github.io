@@ -1,11 +1,11 @@
 @font-face{
     font-family: Poppins;
-    src: url(Poppins-Regular.ttf);
+    src: url("Poppins-Regular.ttf");
 }
 
 @font-face{
     font-family: TeX Gyre Adventor;
-    src: url(texgyreadventor-regular.otf);
+    src: url("texgyreadventor-regular.otf");
 }
 /* creation on information box: to add the itle and the description */
 .information{

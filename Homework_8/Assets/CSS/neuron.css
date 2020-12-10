@@ -19,9 +19,8 @@ margin-top: 10px;
 
 /* Styling of the text for title */
 #title{
-    font-family: TeX Gyre Adventor;
+    font-family: Tex Gyre Adventor;
     font-style: normal;
-    font-weight: normal;
     font-size: 22px;
     padding:10px;
     color: #555353; 
@@ -36,9 +35,7 @@ margin-top: 10px;
 
 /* styling of the description */
 #description{
-    font-family: TeX Gyre Adventor;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Tex Gyre Adventor;
     font-size: 18px;
     padding:10px;
     color:#353333; 

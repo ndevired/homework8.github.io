@@ -33,7 +33,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"#F5F5F5"},
                                 duration:0.25});
         $("#title").html("Frontal Lobe")
-        $("#description").html("The frontal lobe conducts <b>higher executive functions</b> such as emotional regulation, planning, organizing and initiating an intended goal as well as solving problems. It monitors and controls <b>voluntary movements</b> across the body. ");
+        $("#description").html("The frontal lobe conducts <b><i>higher executive functions</b></i> such as emotional regulation, planning, organizing and initiating an intended goal as well as solving problems. It monitors and controls <b><i>voluntary movements</b></i> across the body. ");
     });
         
     //on Mouseleave the frontal lobe should go back to its original color
@@ -47,7 +47,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"#F5F5F5"},
                                 duration:0.25});
         $("#title").html("Occipital Lobe")
-        $("#description").html("The occipital lobe houses the <b>primary visual cortex</b> also known as <b>V1</b>. V1 is responsible for receiving visual information from the eyes, processing this information and sending it to the <b>secondary visual processing areas</b>. These areas interpret the distance, location, depth and identity of the visual cue. ");
+        $("#description").html("The occipital lobe houses the <b><i>primary visual cortex</b></i> also known as <b><i>V1</b></i>. V1 is responsible for receiving visual information from the eyes, processing this information and sending it to the <b><i>secondary visual processing areas</b></i>. These areas interpret the distance, location, depth and identity of the visual cue. ");
     });
         
     //on Mouseleave the occipital lobe should go back to its original color
@@ -61,7 +61,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"#F5F5F5"},
                                 duration:0.25});
         $("#title").html("Temporal Lobe")
-        $("#description").html("The temporal lobe houses the <b>primary auditory cortex</b>. This cortex is in charge of receiving auditory information from the ears and processing it to understand the contents of what we are hearing; this includes words, tone, language and more. This lobe also houses the <b>hippocampus</b> which is an important part of the brain that is responsible for storing and retrieving memories and emotions.");
+        $("#description").html("The temporal lobe houses the <b><i>primary auditory cortex</b></i>. This cortex is in charge of receiving auditory information from the ears and processing it to understand the contents of what we are hearing; this includes words, tone, language and more. This lobe also houses the <b><i>hippocampus</b></i> which is an important part of the brain that is responsible for storing and retrieving memories and emotions.");
     });
         
     //on Mouseleave the temporal lobe should go back to its original color
@@ -75,7 +75,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"#F5F5F5"},
                                 duration:0.25});
         $("#title").html("Parietal Lobe")
-        $("#description").html("The parietal lobe is reponsible for <b>spatial awareness and coordination</b>. It receives and processes sensory input for <b>heat, touch, pain and pressure</b>. This lobe allows humans to discern between different types of input.");
+        $("#description").html("The parietal lobe is reponsible for <b><i>spatial awareness and coordination</b></i>. It receives and processes sensory input for <b><i>heat, touch, pain and pressure</b></i>. This lobe allows humans to discern between different types of input.");
     });
         
     //on Mouseleave the parietal lobe should go back to its original color
@@ -89,7 +89,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"white"},
                                 duration:0.25});
         $("#titleOne").html("Cerebellum")
-        $("#descriptionOne").html("The main function of the cerebellum is to control <b>voluntary movements</b> such as balance, posture, coordination, and speech. It does this by coordinating the way muscles move together to produce such movements.");
+        $("#descriptionOne").html("The main function of the cerebellum is to control <b><i>voluntary movements</b></i> such as balance, posture, coordination, and speech. It does this by coordinating the way muscles move together to produce such movements.");
     });
 
     //on Mouseleave the cerebellum should go back to its original color
@@ -103,7 +103,7 @@ jQuery(function() {
         gsap.to($("#gyrusCinguli .cls-5"), {css: {fill:"white"},
                                             duration:0.25});
         $("#titleOne").html("Gyrus Cinguli")
-        $("#descriptionOne").html("The gyrus cinguli is also known as the cingulate gyrus. It is a part of the limbic system and therefore is responsible for regulating <b>emotions and behavior</b>, and controls <b>autonomic motor movements</b>. ");
+        $("#descriptionOne").html("The gyrus cinguli is also known as the cingulate gyrus. It is a part of the limbic system and therefore is responsible for regulating <b><i>emotions and behavior</b></i>, and controls <b><i>autonomic motor movements</b></i>. ");
     });
 
     //on Mouseleave the gyrus cinguli should go back to its original color
@@ -117,7 +117,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"white"},
                                     duration:0.25});
         $("#titleOne").html("Third and Fourth Ventricles")
-        $("#descriptionOne").html("The <b>ventricles</b> in the brain are responsible for producing, transporting and removing <b>cerebrospinal fluid</b> in the brain. This fluid coats the entire brain and creates a cushion between the brain and the skull to prevent neural damage.<br><br><b>Third Ventricle</b><br> The lateral ventricles connect to the third ventricle through a channel called the <b>foramen of Monro</b>. <br><br><b>Fourth Ventricle</b><br> The fourth ventricle connects to the third ventricle through a channel called the <b>cerebral aqueduct</b>.");
+        $("#descriptionOne").html("The <b><i>ventricles</b></i> in the brain are responsible for producing, transporting and removing <b><i>cerebrospinal fluid</b></i> in the brain. This fluid coats the entire brain and creates a cushion between the brain and the skull to prevent neural damage.<br><br><b>Third Ventricle</b><br> The lateral ventricles connect to the third ventricle through a channel called the <b><i>foramen of Monro</b></i>. <br><br><b>Fourth Ventricle</b><br> The fourth ventricle connects to the third ventricle through a channel called the <b><i>cerebral aqueduct</b></i>.");
     });
 
     //on Mouseleave the third ventricle should go back to its original color
@@ -131,7 +131,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"white"},
                                     duration:0.25});
         $("#titleOne").html("Brainstem")
-        $("#descriptionOne").html("The brainstem consists of the <b>pituitary gland</b>, the <b>pons</b> and the <b>medulla oblongata</b>. <br><br> <b>Pituitary Gland</b> <br> The pituitary gland secretes hormones such as growth hormone, thyroid stimulating hormone, gonadotropic hormones, prolactin hormone, oxytocin and antidiuretic hormone.<br><br><b>Pons</b><br>The pons is in charge of breathing, swallowing, bladder control, eye movement during REM sleep, facial expressions and chewing.<br><br><b>Medulla Oblongata</b><br> The medulla oblongata is responsible for acting as communication between the brain and the spinal cord, and controls autonomic motor movement such as heartbeat and respiration.");
+        $("#descriptionOne").html("The brainstem consists of the <b><i>pituitary gland</b></i>, the <b><i>pons</b></i> and the <b><i>medulla oblongata</b></i>. <br><br> <b>Pituitary Gland</b> <br> The pituitary gland secretes hormones such as growth hormone, thyroid stimulating hormone, gonadotropic hormones, prolactin hormone, oxytocin and antidiuretic hormone.<br><br><b>Pons</b><br>The pons is in charge of breathing, swallowing, bladder control, eye movement during REM sleep, facial expressions and chewing.<br><br><b>Medulla Oblongata</b><br> The medulla oblongata is responsible for acting as communication between the brain and the spinal cord, and controls autonomic motor movement such as heartbeat and respiration.");
     });
 
     //on Mouseleave the brainstem should go back to its original color
@@ -145,7 +145,7 @@ jQuery(function() {
         gsap.to($("#septumPellucidum .cls-11"), {css: {fill:"#FFFFFF"},
                                             duration:0.25});
         $("#titleOne").html("Septum Pellucidum")
-        $("#descriptionOne").html("The <b>ventricles</b> in the brain are responsible for producing, transporting and removing <b>cerebrospinal fluid</b> in the brain. This fluid coats the entire brain and creates a cushion between the brain and the skull to prevent neural damage. There are three ventricles: the lateral ventricles, the third ventricle and the fourth ventricle. The <b>septum pellucidum</b> is responsible for separating the lateral ventricles.");
+        $("#descriptionOne").html("The <b><i>ventricles</b></i> in the brain are responsible for producing, transporting and removing <b><i>cerebrospinal fluid</b></i> in the brain. This fluid coats the entire brain and creates a cushion between the brain and the skull to prevent neural damage. There are three ventricles: the lateral ventricles, the third ventricle and the fourth ventricle. The <b><i>septum pellucidum</b></i> is responsible for separating the lateral ventricles.");
     });
 
     //on Mouseleave the septum pellucidum should go back to its original color
@@ -159,7 +159,7 @@ jQuery(function() {
         gsap.to($(this), {css: {fill:"#E0E0E0"},
                                     duration:0.25});
         $("#titleOne").html("Corpus Callosum")
-        $("#descriptionOne").html("The corpus callosum connects the left and right hemispheres of the brain. It acts as the main form of <b>communication</b> between both sides. This ensures that information is relayed to both sides of the brain.");
+        $("#descriptionOne").html("The corpus callosum connects the left and right hemispheres of the brain. It acts as the main form of <b><i>communication</b></i> between both sides. This ensures that information is relayed to both sides of the brain.");
     });
 
     //on Mouseleave the corpus callosum should go back to its original color

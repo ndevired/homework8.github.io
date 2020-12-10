@@ -26,7 +26,7 @@ jQuery(function() {
     gsap.to($(this), {css: {fill:"#F5F5F5"},
                             duration:0.25});
     $("#title").html("Terminal")
-    $("#description").html("After the <b>actional potential</b> has propagated down the axon it reaches the <b>terminal</b>. The terminal is responsible for transmitting this signal to other neurons or cells through the neuron-to-neuron connection called the <b>synapse</b>. <br><br>When the action potential reaches the terminal it gets converted to a chemical signal through the release of <b>neurotransmitters</b>. <br><br> These neurotransmitters are released into the synapse where there are picked up by the <b>dendrites</b> of another neuron.");
+    $("#description").html("After the <b><i>actional potential</b></i> has propagated down the axon it reaches the <b><i>terminal</b></i>. The terminal is responsible for transmitting this signal to other neurons or cells through the neuron-to-neuron connection called the <b><i>synapse</b></i>. <br><br>When the action potential reaches the terminal it gets converted to a chemical signal through the release of <b><i>neurotransmitters</b></i>. <br><br> These neurotransmitters are released into the synapse where there are picked up by the <b><i>dendrites</b></i> of another neuron.");
   });
 
   //on Mouseleave the terminal should go back to its original color
@@ -40,7 +40,7 @@ jQuery(function() {
     gsap.to($(this), {css: {fill:"#F5F5F5"},
                             duration:0.25});
     $("#title").html("Myelin Sheath")
-    $("#description").html("The <b>myelin sheath</b> is a fatty insulating layer that is wrapped around the <b>axon</b> that transports the <b>action potential</b> from the <b>dendrite</b> to the <b>terminal</b>. The myelin sheath is produced by <b>Schwann cells</b> in a process called <b>myelination</b>. <br> <br> The main function of the myelin sheath is to help the neuron conduct the electrical signal (action potential) at a faster rate down the axon. The myelin sheath allows the electrical signal (action potential) to jump from one node to the next node in a process called <b>saltatory conduction</b>, causing the signal to travel faster. <br><br> Therefore, if the myelin sheath is damaged it can cause these signals to slow down. The loss of the myelin sheath causes the neurogenerative disease, <b>multiple sclerosis</b>, which can lead to motor impairment.");
+    $("#description").html("The <b><i>myelin sheath</b></i> is a fatty insulating layer that is wrapped around the <b><i>axon</b></i> that transports the <b><i>action potential</b></i> from the <b><i>dendrite</b></i> to the <b><i>terminal</b></i>. The myelin sheath is produced by <b><i>Schwann cells</b></i> in a process called <b><i>myelination</b></i>. <br> <br> The main function of the myelin sheath is to help the neuron conduct the electrical signal (action potential) at a faster rate down the axon. The myelin sheath allows the electrical signal (action potential) to jump from one node to the next node in a process called <b><i>saltatory conduction</b></i>, causing the signal to travel faster. <br><br> Therefore, if the myelin sheath is damaged it can cause these signals to slow down. The loss of the myelin sheath causes the neurogenerative disease, <b><i>multiple sclerosis</b></i>, which can lead to motor impairment.");
   });
 
   //on Mouseleave the myelin sheeth should go back to its original color
@@ -54,7 +54,7 @@ jQuery(function() {
     gsap.to($(this), {css: {fill:"#F5F5F5"},
                             duration:0.25});
     $("#title").html("Nucleus")
-    $("#description").html("The <b>nucleus</b>, (plural is nuclei), is in all types of cells within the human body besides red blood cells. The nucleus is responsible for housing all of the genetic and hereditary information and controlling the the <b>growth and metabolism</b> of a cell.");
+    $("#description").html("The <b><i>nucleus</b></i>, (plural is nuclei), is in all types of cells within the human body besides red blood cells. The nucleus is responsible for housing all of the genetic and hereditary information and controlling the the <b><i>growth and metabolism</b></i> of a cell.");
   });
 
   //on Mouseleave the nuclei should go back to its original color
@@ -68,7 +68,7 @@ jQuery(function() {
     gsap.to($(this), {css: {fill:"#F5F5F5"},
                             duration:0.25});
     $("#title").html("Node of Ranvier")
-    $("#description").html("The <b>Node of Ranvier</b> are gaps between the <b>myelin sheath</b> that expose the axon to the external environment. These sections are filled with ion channels allow the flow of ions between the interior of the axon and the external environment. <br> <br>They are very rich in <b>sodium and potassium ion channels</b> which are used to produce action potentials. The action potential produced at the first node is <b>propagated</b> to the next node where it is <b>regenerated</b>, and passed on to the next until it reaches the <b>terminal</b>.");
+    $("#description").html("The <b><i>Node of Ranvier</b></i> are gaps between the <b><i>myelin sheath</b></i> that expose the axon to the external environment. These sections are filled with ion channels allow the flow of ions between the interior of the axon and the external environment. <br> <br>They are very rich in <b><i>sodium and potassium ion channels</b></i> which are used to produce action potentials. The action potential produced at the first node is <b><i>propagated</b></i> to the next node where it is <b><i>regenerated</b></i>, and passed on to the next until it reaches the <b><i>terminal</b></i>.");
   });
 
   //on Mouseleave the nodes should go back to its original color
@@ -82,7 +82,7 @@ jQuery(function() {
     gsap.to($(this), {css: {fill:"#F5F5F5"},
                             duration:0.25});
     $("#title").html("Soma")
-    $("#description").html("The <b>soma</b> is the battery that keeps the neuron going. It does not play an active role in transmitting the action potential. <br><br>It produces <b>proteins</b> to create the various structures of the neuron such as the dendrite, axon, and more!");
+    $("#description").html("The <b><i>soma</b></i> is the battery that keeps the neuron going. It does not play an active role in transmitting the action potential. <br><br>It produces <b><i>proteins</b></i> to create the various structures of the neuron such as the dendrite, axon, and more!");
   });
 
   //on Mouseleave the soma should go back to its original color
@@ -96,7 +96,7 @@ jQuery(function() {
     gsap.to($(this), {css: {fill:"#F5F5F5"},
                             duration:0.25});
     $("#title").html("Dendrite")
-    $("#description").html("The <b>dendrite</b> is the section of the neuron that is responsible for receiving signals from other cells, glands, and neurons. <br> <br> The branches protruding from this structure are called <b>dendritic branches</b> and they are responsible for capturing the thousands of signals that a neuron can receive from many other cells. <br> <br> The signals can be <b>excitatory</b> or <b>inhibitory</b> in nature. The sum of all of these signals will either cause or prevent a response. An excitatory signal will cause the neuron to fire an electrical signal called an <b>action potential</b> that travels down the <b>axon</b>. An inhibitory signal will prevent the neuron from firing an actional potential.");
+    $("#description").html("The <b><i>dendrite</b></i> is the section of the neuron that is responsible for receiving signals from other cells, glands, and neurons. <br> <br> The branches protruding from this structure are called <b><i>dendritic branches</b></i> and they are responsible for capturing the thousands of signals that a neuron can receive from many other cells. <br> <br> The signals can be <b><i>excitatory</b></i> or <b><i>inhibitory</b></i> in nature. The sum of all of these signals will either cause or prevent a response. An excitatory signal will cause the neuron to fire an electrical signal called an <b><i>action potential</b></i> that travels down the <b><i>axon</b></i>. An inhibitory signal will prevent the neuron from firing an actional potential.");
   });
 
   //on Mouseleave the dendrite should go back to its original color

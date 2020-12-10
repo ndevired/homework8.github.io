@@ -1,7 +1,7 @@
 /* adding font every where */
 @font-face{
     font-family: Tex Gyre Adventor;
-    src: url("Assets/Images and Text/texgyreadventor-regular.otf");
+    src: url("Assets/Images_and_Text/texgyreadventor-regular.otf");
 }
 
 /* Styling Across All Pages for nav */

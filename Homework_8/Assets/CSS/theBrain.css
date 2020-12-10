@@ -23,7 +23,7 @@
 }
     
 /* creation and styling of the line to divide the description from the title  */
-#line{
+.line{
     height: 2px;
     width: 99%;
     background-color: #555353; 

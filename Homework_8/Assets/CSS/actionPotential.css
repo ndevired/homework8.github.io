@@ -58,7 +58,6 @@
     color: #251F1F;
     font-family: TeX Gyre Adventor;
     font-style: normal;
-    font-weight: medium;
     font-size: 16px;
 
 }
@@ -126,4 +125,13 @@
 /* setting the entire table region to a certain max width */
 .explain_table{
     min-width:400px;
+}
+
+/* definition color */
+.definition{
+    font-family: TeX Gyre Adventor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px; 
+    color:white;
 }

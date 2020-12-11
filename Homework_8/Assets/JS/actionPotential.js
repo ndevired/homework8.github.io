@@ -87,11 +87,5 @@ jQuery(function() {
     $(".definition").on("mouseenter", function() {
         gsap.to($(this), {css: {color: "white"},
                                     duration: 0.25});
-    });
-
-    //mouseenter for definition and changes the color of the text                                   
-    $(".definition").on("mouseleave", function() {
-        gsap.to($(this), {css: {color: "#555353"},
-                                    duration: 0.25});
     });   
 });

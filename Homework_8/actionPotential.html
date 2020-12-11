@@ -12,8 +12,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <!--GSAP link -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-        <!-- Scroll Trigger link -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
         <!-- Link for Bootstrap accordion -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- Stylesheet for nav bar -->
@@ -42,14 +40,14 @@
                     <div class="row navigationTabs">
                         <!-- link the neuron page -->
                         <a href='./the-neuron.html'>
-                            <h2 class="navText">THE NEURON</h2>
+                            <h2 class="navText">NEURON</h2>
                         </a>
                         <a href=''>
                             <h2 class="navText">ACTION POTENTIAL</h2>
                         </a>
                         <!-- link the brain page -->
                         <a href='./theBrain.html'>
-                            <h2 class="navText">THE BRAIN</h2>
+                            <h2 class="navText">BRAIN</h2>
                         </a>
                     </div>
                 </div>
@@ -70,9 +68,9 @@
                         <br><br>
                         The exchange of ions occurs due to the presence of a <b><i>concentration gradient</i></b>. A concentration gradient occurs because of the difference in the ion concentrations inside the neuron and outside the neuron. Ions always move from a higher concentration to a lower concentration, down the concentration gradient.
                         <br><br>
-                        The cell membrane of a neuron is <b><i>highly permeable</i></b> to potassium ions, causing potassium to constantly leak out of the neuron through <b><i>potassium leak channels</i></b>. The membrane is <b><i>partially permeable</i></b> to sodium ions, causing sodium to leak into the neuron through <b><i>sodium leak channels</i></b>. Potassium and sodium ions are positively charged. Due to large amount of potassium ions leaving the neuron, the <b><i> extracellular fluid is generally more positively charged than the interior of the neuron. Therefore, the membrane potential of the neuron is negative.</i></b>
+                        The cell membrane of a neuron is <b><i>highly permeable</i></b> to potassium ions, causing potassium to constantly leak out of the neuron through <b><i>potassium leak channels</i></b>. The membrane is <b><i>partially permeable</i></b> to sodium ions, causing sodium ions to leak into the neuron through <b><i>sodium leak channels</i></b>. Potassium and sodium ions are positively charged. Due to large amount of potassium ions leaving the neuron, the <b><i> extracellular fluid is generally more positively charged than the interior of the neuron. Therefore, the membrane potential of the neuron is negative.</i></b>
                         <br><br>
-                        In order to maintain the state of the negative concentration gradient, the cell uses a <b><i>sodium potassium pump</i></b> that pumps two potassium ions back into the neuron and three sodium out of the neuron at the same time.
+                        In order to maintain the state of the negative concentration gradient, the cell uses a <b><i>sodium potassium pump</i></b> that pumps two potassium ions back into the neuron and three sodium ions out of the neuron at the same time.
                         <br><br>
                         <b class="definition">An action potential is a temporary change in the negative state of the membrane potential to a positive state because of the flow of these ions.</b> 
                         <br><br>
@@ -97,10 +95,10 @@
                                     <div class="card">
                                         <!-- the header of the card -->
                                         <div class="titleHeader card-header">
-                                            <!-- create 1st button for stimulus -->
-                                            <button id="stimulusButton" class="buttons">1</button>
                                             <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
                                             <a class="cardLink cardLink1 card-link" data-toggle="collapse" href="#collapseOne">
+                                                <!-- create 1st button for stimulus -->
+                                                <button id="stimulusButton" class="buttons">1</button>
                                                 Stimulus
                                             </a>
                                         </div>
@@ -108,8 +106,8 @@
                                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                             <!-- insert card body with the text about the resting state -->
                                             <div class="card-body"> 
-                                                We start at the resting state, with a membrane potential of -70mV and the voltage gated sodium and potassium channels are completely closed. 
-                                                These voltaged gated ion channel will only open in response to an action potential. In order for an action potential to occur the membrane potential must reach the threshold potential(-55mV).
+                                                We start at the resting state, with a membrane potential of -70mV, and the voltage gated sodium and potassium channels are completely closed. 
+                                                These voltaged gated ion channel will only open in response to an action potential. In order for an action potential to occur the membrane potential must reach the threshold potential (-55mV).
                                                 <br><br>
                                                 This is where the <b><i>stimlus</i></b> comes in. A stimulus must be strong enough to cause a rush of positive ions into the neuron, causing the membrane potential to also rise closer to -55mV. Once the threshold potential has been reached, <b><i>depolarization</i></b> will occur. If a stimulus is weak it will not produce an action potential and will result in <b><i>failed initiations</i></b>, as seen in the graph.  
                                             </div>
@@ -126,10 +124,10 @@
                                     <div class="card">
                                         <!-- the header of the card -->
                                         <div class="titleHeader card-header">
-                                            <!-- create 2nd button for depolarization -->
-                                            <button id="depolarizationButton" class="buttons">2</button>
                                             <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
                                             <a class="cardLink cardLink2 collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                                <!-- create 2nd button for depolarization -->
+                                                <button id="depolarizationButton" class="buttons">2</button>
                                                 Depolarization
                                             </a>
                                         </div>
@@ -152,10 +150,10 @@
                                     <div class="card">
                                         <!-- the header of the card -->
                                         <div class="titleHeader card-header">
-                                            <!-- create 3rd button for repolarization -->
-                                            <button id="repolarizationButton" class="buttons">3</button>
                                             <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
                                             <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                                <!-- create 3rd button for repolarization -->
+                                                <button id="repolarizationButton" class="buttons">3</button>
                                                 Repolarization
                                             </a>
                                         </div>
@@ -178,10 +176,10 @@
                                     <div class="card">
                                         <!-- the header of the card -->
                                         <div class="titleHeader card-header">
-                                            <!-- create 4th button for hyperpolarization -->
-                                            <button id="hyperpolarizationButton" class="buttons">4</button>
                                             <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
                                             <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                                <!-- create 4th button for hyperpolarization -->
+                                                <button id="hyperpolarizationButton" class="buttons">4</button>
                                                 Hyperpolarization
                                             </a>
                                         </div>
@@ -204,10 +202,10 @@
                                     <div class="card">
                                         <!-- the header of the card -->
                                         <div class="titleHeader card-header">
-                                             <!-- create 5th button for resting state -->
-                                            <button id="restingStateButton" class="buttons">5</button>
                                             <!-- link the card with data toggle so it will collaspe upon clicking something else  -->
                                             <a class="cardLink collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                                 <!-- create 5th button for resting state -->
+                                                <button id="restingStateButton" class="buttons">5</button>
                                                 Resting State
                                             </a>
                                         </div>

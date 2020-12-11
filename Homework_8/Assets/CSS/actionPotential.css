@@ -126,12 +126,3 @@
 .explain_table{
     min-width:400px;
 }
-
-/* definition color */
-.definition{
-    font-family: TeX Gyre Adventor;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px; 
-    color:white;
-}

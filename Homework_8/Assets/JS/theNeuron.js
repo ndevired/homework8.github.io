@@ -68,7 +68,7 @@ jQuery(function() {
     gsap.to($(this), {css: {fill:"#F5F5F5"},
                             duration:0.25});
     $("#title").html("Node of Ranvier")
-    $("#description").html("The <b><i>Node of Ranvier</b></i> are gaps between the <b><i>myelin sheath</b></i> that expose the axon to the external environment. These sections are filled with ion channels allow the flow of ions between the interior of the axon and the external environment. <br> <br>They are very rich in <b><i>sodium and potassium ion channels</b></i> which are used to produce action potentials. The action potential produced at the first node is <b><i>propagated</b></i> to the next node where it is <b><i>regenerated</b></i>, and passed on to the next until it reaches the <b><i>terminal</b></i>.");
+    $("#description").html("The <b><i>Node of Ranvier</b></i> are gaps between the <b><i>myelin sheath</b></i> that expose the axon to the external environment. These sections are filled with ion channels that allow the flow of ions between the interior of the axon and the external environment. <br> <br>They are very rich in <b><i>sodium and potassium ion channels</b></i> which are used to produce action potentials. The action potential produced at the first node is <b><i>propagated</b></i> to the next node where it is <b><i>regenerated</b></i>, and passed on to the next until it reaches the <b><i>terminal</b></i>.");
   });
 
   //on Mouseleave the nodes should go back to its original color

@@ -54,7 +54,6 @@
     font-weight: normal;
     font-size: 22px;
     padding:10px;
-    padding-top: 20px;
     color: #555353; 
 }
     
@@ -84,5 +83,9 @@
 }
 
 .mainPageArea4{
+    padding-top: 5%;
+}
+
+.mainPageArea5{
     padding-top: 5%;
 }

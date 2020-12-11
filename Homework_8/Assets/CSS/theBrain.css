@@ -73,19 +73,22 @@
     padding:10px;
     color:#353333; 
 }
-
+/* setting min width for the first svg  */
 .sideSection{
     min-width: 400px;
 }
 
+/* setting min width for the second svg  */
 .crossSection{
     min-width: 400px;
 }
 
+/* setting padding for the first svg and informational section  */
 .mainPageArea4{
     padding-top: 5%;
 }
 
+/* setting padding for the second svg and informational section  */
 .mainPageArea5{
     padding-top: 10%;
 }
